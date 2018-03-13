@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(../assets/Lato-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em; 
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+#sidebar {
+  width: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 6px solid #a4fbe7;
+  transition: 500ms ease-out;
+}
+
+#menu-btn {
+  background-color: #a4fbe7;
+  padding: 9px 25px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-tranform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  position: fixed;
+  top: 305px;
+  left: 0px;
+  line-height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  overflow: hidden;
+}
+
+.main-content-wrapper {
+  margin-left: 100px;
+  padding: 10px 50px 50px 0;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 15%;
+}
+
+
+
+/* Hero Section */
+#hero {
+  padding: 50px 0;
+  height: 500px;
+  /* background-color: #eee; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.primary-link {
+  /* box-sizing: unset; */
+  display: inline-block;
+  margin: 50px 0;
+  font-size: 3.0em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0 15px;
+  /* line-height: 1em; */
+  box-shadow: 0px 23px #a4fbe7 inset;
+  letter-spacing: 0.1em;
+  transition: 400ms ease-out;
+}
+
+.primary-link:hover {
+  box-shadow: 0px 23px #ddd inset;;
+}
+
+/* Skills Section */
+#skills {
+  padding: 50px 0;
+  height: 450px;
+  /* background-color: #ddd; */
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  height: 100%;
+}
+
+.skill-item {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.skill-item-text {
+  display: flex;
+  flex-basis: 15%;
+  justify-content: flex-start;
+}
+
+.skill-item-bar {
+  display: flex;
+  flex-basis: 85%;
+  height: 35px;
+  background-color: #a4fbe7;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rating-10 {
+  width: 100%;
+}
+
+.rating-9 {
+  flex-basis: 76.5%;
+}
+
+.rating-8 {
+  flex-basis: 68%;
+}
+
+.rating-7 {
+  flex-basis: 59.5%;
+}
