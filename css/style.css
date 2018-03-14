@@ -26,9 +26,21 @@ h1 {
   line-height: 1.5em;
 }
 
+h2 {
+  font-size: 3.0em;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
 h3 {
   font-size: 1.5em;
   font-weight: 900;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
   line-height: 1.5em;
 }
 
@@ -58,6 +70,11 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   overflow: hidden;
+  transition: 400ms ease-out background-color;
+}
+
+#menu-btn:hover {
+  background-color: #ddd;
 }
 
 .main-content-wrapper {
@@ -156,4 +173,51 @@ header img {
 
 .rating-7 {
   flex-basis: 59.5%;
+}
+
+/* Projects Section  */
+#projects {
+  padding: 50px 0;
+  background-color: #ddd;
+}
+
+#projects-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project {
+  flex-basis: 100%;
+  background-color: coral;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+}
+
+.img-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 350ms ease-out opacity;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.light {
+  color: #fff;
 }
