@@ -52,6 +52,7 @@ h4 {
   bottom: 0;
   border-left: 6px solid #a4fbe7;
   transition: 500ms ease-out;
+  z-index: 20;
 }
 
 #menu-btn {
