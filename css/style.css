@@ -20,6 +20,12 @@ a {
   color: #333;
 }
 
+p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  /* font-weight: lighter; */
+}
+
 h1 {
   font-size: 3.5em;
   font-weight: 900;
@@ -33,8 +39,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 900;
+  font-size: 1.3em;
+  font-weight: normal;
   line-height: 1.5em;
 }
 
@@ -72,6 +78,7 @@ h4 {
   letter-spacing: 0.2em;
   overflow: hidden;
   transition: 400ms ease-out background-color;
+  cursor: pointer;
 }
 
 #menu-btn:hover {
@@ -80,7 +87,7 @@ h4 {
 
 .main-content-wrapper {
   margin-left: 100px;
-  padding: 10px 50px 50px 0;
+  padding: 10px 100px 50px 0;
 }
 
 header {
@@ -94,13 +101,10 @@ header img {
   width: 15%;
 }
 
-
-
 /* Hero Section */
 #hero {
   padding: 50px 0;
   height: 500px;
-  /* background-color: #eee; */
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -108,14 +112,12 @@ header img {
 }
 
 .primary-link {
-  /* box-sizing: unset; */
   display: inline-block;
   margin: 50px 0;
   font-size: 3.0em;
   font-weight: 900;
   text-transform: uppercase;
   padding: 0 15px;
-  /* line-height: 1em; */
   box-shadow: 0px 23px #a4fbe7 inset;
   letter-spacing: 0.1em;
   transition: 400ms ease-out;
@@ -127,9 +129,9 @@ header img {
 
 /* Skills Section */
 #skills {
-  padding: 50px 0;
-  height: 450px;
-  /* background-color: #ddd; */
+  /* padding: 100px 0; */
+  margin: 100px 0;
+  /* height: 280px; */
 }
 
 .skill-wrapper {
@@ -143,17 +145,18 @@ header img {
   flex-basis: 100%;
   display: flex;
   flex-flow: row nowrap;
+  margin: 3px 0;
 }
 
 .skill-item-text {
   display: flex;
-  flex-basis: 15%;
+  flex-basis: 25%;
   justify-content: flex-start;
 }
 
 .skill-item-bar {
   display: flex;
-  flex-basis: 85%;
+  flex-basis: 75%;
   height: 35px;
   background-color: #a4fbe7;
   justify-content: space-around;
@@ -165,15 +168,15 @@ header img {
 }
 
 .rating-9 {
-  flex-basis: 76.5%;
+  flex-basis: 67.5%;
 }
 
 .rating-8 {
-  flex-basis: 68%;
+  flex-basis: 60%;
 }
 
 .rating-7 {
-  flex-basis: 59.5%;
+  flex-basis: 52.7%;
 }
 
 /* Projects Section  */
@@ -221,4 +224,162 @@ header img {
 
 .light {
   color: #fff;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.vertical-flex-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 50px 0;
+  align-items: center;
+}
+
+#social-links {
+  font-size: 1.6em;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.social-link a {
+  margin: 0px 10px;
+  transition: 200ms color;
+}
+
+.social-link a:hover {
+  color: #55f7d4;
+}
+
+#copyright {
+  margin: 20px 0;
+}
+
+#privacy-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy-link {
+  transition: 400ms box-shadow;
+  padding: 0 3px;
+}
+
+.privacy-link:hover {
+  box-shadow: 150px 0px #a4fbe7 inset;
+}
+
+.green-line {
+  background-color: #55f7d4;
+  height: 3px;
+  width: 50px;
+  margin: 0 20px;
+}
+
+#author-brand {
+  margin-top: 50px;
+  color: #aaa;
+}
+
+#author-font {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #aaa;
+  padding: 0 3px;
+  transition: 200ms color;
+}
+
+#author-font:hover {
+  color: #55f7d4;
+}
+
+/* About Section */
+#about {
+  height: 1000px;
+  /* background-color: #ddd; */
+  margin-top: 100px;
+}
+
+#about-wrapper {
+  /* background-color: coral; */
+  margin-top: 100px;
+  height: 100%;
+}
+
+#intro-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#intro-pic {
+  flex-basis: 20%;
+}
+
+#intro-copy {
+  flex-basis: 80%;
+  padding: 0 80px;
+}
+
+#intro-pic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 200px;
+}
+
+/* Tools */
+#tools {
+  margin: 100px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+#tools-wrapper {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tool {
+  font-size: 50px;
+  color: #333;
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+#js, #php, #java {
+  font-size: 65px;
+}
+
+.primary-header {
+  display: inline-block;
+  margin: 50px 0;
+  font-size: 3.0em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0 15px;
+  box-shadow: 0px 23px #ddd inset;
+  letter-spacing: 0.1em;
+}
+
+#tools-header-wrapper {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.text-right {
+  display: flex;
+  justify-content: flex-end;
 }
