@@ -12,7 +12,7 @@
 body {
   font-family: Lato, helvetica, sans-serif;
   font-size: 100%;
-  line-height: 1.5em; 
+  line-height: 1.5em;
 }
 
 a {
@@ -56,13 +56,13 @@ h4 {
   top: 0;
   left: 0;
   bottom: 0;
-  border-left: 6px solid #a4fbe7;
+  border-left: 6px solid #55f7d4;
   transition: 500ms ease-out;
   z-index: 20;
 }
 
 #menu-btn {
-  background-color: #a4fbe7;
+  background-color: #55f7d4;
   padding: 9px 25px;
   transform-origin: 0 0;
   transform: rotate(-90deg);
@@ -81,7 +81,6 @@ h4 {
   transition: 400ms box-shadow;
   cursor: pointer;
   box-shadow: 0 5px 5px #eee;
-
 }
 
 #menu-btn:hover {
@@ -106,6 +105,7 @@ header img {
 }
 
 /* Hero Section */
+
 #hero {
   padding: 150px 0;
   /* height: 500px; */
@@ -123,7 +123,7 @@ header img {
   text-transform: uppercase;
   padding: 15px 25px;
   /* border: 2px solid #55f7d4; */
-  background-color: #a4fbe7;
+  background-color: #55f7d4;
   box-shadow: 0 5px 10px #777;
   letter-spacing: 0.1em;
   transition: 400ms ease-out;
@@ -135,6 +135,7 @@ header img {
 }
 
 /* Skills Section */
+
 #skills {
   /* padding: 100px 0; */
   margin: 100px 0;
@@ -171,6 +172,7 @@ header img {
 }
 
 /* Projects Section  */
+
 #projects {
   padding-bottom: 50px;
 }
@@ -220,6 +222,8 @@ header img {
 footer {
   margin-top: 50px;
   text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .vertical-flex-wrapper {
@@ -257,7 +261,7 @@ footer {
 
 .privacy-link {
   transition: 400ms box-shadow;
-  padding: 0 3px; 
+  padding: 0 3px;
 }
 
 .privacy-link:hover {
@@ -289,6 +293,7 @@ footer {
 }
 
 /* About Section */
+
 #about {
   margin-top: 100px;
   border-bottom: 23px solid #ddd;
@@ -322,6 +327,7 @@ footer {
 }
 
 /* Tools */
+
 #tools {
   margin: 50px 0;
   display: flex;
@@ -347,7 +353,9 @@ footer {
   margin: 25px 0;
 }
 
-#js, #php, #java {
+#js,
+#php,
+#java {
   font-size: 65px;
 }
 
@@ -414,7 +422,8 @@ footer {
   text-transform: uppercase;
 }
 
-.company, .dates {
+.company,
+.dates {
   font-style: italic;
 }
 
@@ -427,7 +436,7 @@ footer {
 }
 
 #square-2 {
-  fill:skyblue;
+  fill: skyblue;
 }
 
 #svg-1 {
@@ -440,4 +449,69 @@ footer {
   position: absolute;
   top: 70px;
   left: 450px;
+}
+
+/* Contact Page */
+
+/* .dark-page {
+  background-color: #111;
+  color: #bbb;
+} */
+
+#contact-form-section {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  /* background-color: coral; */
+}
+
+#contact-form-wrapper {
+  padding: 50px 50px; 
+  text-align: center;
+}
+
+.input-box {
+  width: 100%;
+  height: 60px;
+  display: block;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  margin: 15px 0;
+  background-color: inherit;
+  color: #555;
+}
+
+.input-box:focus {
+  box-shadow: 0 0 8px skyblue;
+  border: 1px solid skyblue;
+}
+
+#message {
+  height: 200px;
+  resize: none;
+  line-height: 1.5em;
+}
+
+#submit-btn {
+ /* background-color: #55f7d4; */
+  box-shadow: 0 5px 10px #333;
+  border: none;
+  margin: 0px auto;
+  width: 100%;
+  background-color: #333;
+  border-radius: 4px;
+  color: #eee;
+  height: 70px;
+  transition: 400ms box-shadow;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  box-shadow: 0 0 0 #fff;
+}
+
+#contact-header {
+  margin: 50px 0;
 }

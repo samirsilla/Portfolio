@@ -37,5 +37,5 @@ function changeSidebarBorder(e) {
 }
 
 function originalSidebarBorder(e) {
-  sidebar.style.borderLeft = '6px solid #a4fbe7';
+  sidebar.style.borderLeft = '6px solid #55f7d4';
 }
