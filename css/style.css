@@ -453,15 +453,9 @@ footer {
 
 /* Contact Page */
 
-/* .dark-page {
-  background-color: #111;
-  color: #bbb;
-} */
-
 #contact-form-section {
   width: 80%;
   margin: 0 auto 50px auto;
-  /* background-color: coral; */
 }
 
 #contact-form-wrapper {
@@ -514,4 +508,13 @@ footer {
 
 #contact-header {
   margin: 50px 0;
+}
+
+.error {
+  width: 100%;
+  margin: 50px 0 0 0;
+  font-size: 1.3em;
+  color: skyblue;
+  /* background-color: #aaa; */
+  /* color: red; */
 }

@@ -1,3 +1,5 @@
+<?php include('form.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,14 +12,11 @@
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
 
-<body class="dark-page">
+<body>
   <aside id="sidebar">
     <a id="menu-btn">MENU</a>
   </aside>
-
   <div class="main-content-wrapper">
-
-
     <header>
       <div id="brand">
         <img src="assets/logo.jpg" alt="samir-logo">
@@ -28,47 +27,43 @@
     <section id="contact-form-section">
       <div id="contact-form-wrapper">
         <h2 id="contact-header">Got a project idea? Just want to say hello? Shoot me a quick message!</h2>
-        <form id="contact-form" action="#">
-          <input class="input-box" id="name" name="name" type="text" placeholder="Name">
-          <input class="input-box" id="email" name="email" type="email" placeholder="Email">
-          <textarea class="input-box" id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
-
+        <form id="contact-form" method="post" action="<?= $_SERVER['PHP_SELF'] ?>">
+          <input class="input-box" id="name" name="name" type="text" placeholder="Name" value="<?= $name ?>">
+          <input class="input-box" id="email" name="email" type="email" placeholder="Email" value="<?= $email ?>">
+          <textarea class="input-box" type="text" id="message" name="message" value="<?= $message ?>" cols="30" rows="10" placeholder="Message"></textarea>
+          <input class="primary-link" id="submit-btn" type="submit" name="submit-btn" value="Send Message">
           
-          <input class="primary-link" id="submit-btn" type="button" value="Send Message">
+          <div class="error"><?= $display_error ?></div>
 
         </form>
-
-      
-
-
-
       </div>
-
-
-
-
-
-
-
     </section>
 
 
+
+
     <footer>
-    
-        <div class="vertical-flex-wrapper">
-        
+      <div class="vertical-flex-wrapper">
         <div id="social-links">
           <div class="social-link">
-            <a href="http://github.com/samirsilla" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="http://github.com/samirsilla" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
           <div class="social-link">
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </div>
           <div class="social-link">
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
           <div class="social-link">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </div>
         </div>
         <div id="copyright">
@@ -79,25 +74,20 @@
             <a href="index.html">Privacy Policy</a>
           </div>
           <div class="green-line">
-    
+
           </div>
           <div class="privacy-link">
             <a href="#">Terms of Use</a>
           </div>
         </div>
         <div id="author-brand">
-          Website by <a href="#" id="author-font">smr.</a>
+          Website by
+          <a href="#" id="author-font">smr.</a>
         </div>
-    
-    
-      </div> 
-      </footer>
-
+      </div>
+    </footer>
   </div>
   <!-- End main-content-wrapper -->
-
-
   <script src="js/main.js"></script>
 </body>
-
 </html>
