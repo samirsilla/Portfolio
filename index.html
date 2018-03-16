@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
 </head>
+
 <body>
 
   <!-- <svg id="svg-1" width="70" height="70">
@@ -18,192 +20,144 @@
       <rect id="square-2" width="70" height="70"/>
   </svg> -->
 
-<aside id="sidebar">
-  <a id="menu-btn">MENU</a>
-</aside>
+  <aside id="sidebar">
+    <a id="menu-btn">MENU</a>
+  </aside>
 
-<div class="main-content-wrapper">
-  
-  <header>
-    <div id="brand">
-      <img src="assets/logo.jpg" alt="samir-logo">
+  <section id="menu">
+    <div id="close">
+      <i class="fas fa-times"></i>
     </div>
-  </header>
-
-  <section id="hero">
-    <h1>I'm a professional web developer with a passion for <span class="typer" id="typer" data-words="beautiful,responsive,mobile-friendly,minimal,purposeful,results-driven" data-delay="100" data-deleteDelay="4000"></span><span class="cursor" data-owner="typer"></span>design.</h1>
-
-  <a class="primary-link center" href="contact.php">say hello</a>
-
+    <div id="nav">
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="#projects">
+            <li id="portfolio-link">Portfolio</li>
+          </a>
+          <a href="#about">
+            <li id="about-link">About</li>
+          </a>
+          <a href="contact.php">
+            <li>Contact</li>
+          </a>
+          <a href="blog.html">
+            <li>Blog</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
   </section>
 
-  <section id="projects">
-    <!-- <div class="primary-header text-right">
+  <div class="main-content-wrapper">
+
+    <header>
+      <div id="brand">
+        <img src="assets/logo.jpg" alt="samir-logo">
+      </div>
+    </header>
+
+    <section id="hero">
+      <h1>I'm a professional web developer with a passion for
+        <span class="typer" id="typer" data-words="beautiful,responsive,mobile-friendly,minimal,purposeful,results-driven"
+          data-delay="100" data-deleteDelay="4000"></span>
+        <span class="cursor" data-owner="typer"></span>design.</h1>
+
+      <a class="primary-link center" href="contact.php">say hello</a>
+
+    </section>
+
+    <section id="projects">
+      <!-- <div class="primary-header text-right">
       Portfolio
     </div> -->
-    <div id="projects-wrapper">
+      <div id="projects-wrapper">
 
-      <div class="project">
-        <img src="assets/pixodime-featured.jpg" alt="pixodime project featured thumbnail">
-        <div class="img-overlay">
-          <h2 class="light">Pixodime</h2>
-          <h4 class="light">case study</h4>
+        <div class="project">
+          <img src="assets/pixodime-featured.jpg" alt="pixodime project featured thumbnail">
+          <div class="img-overlay">
+            <h2 class="light">Pixodime</h2>
+            <h4 class="light">case study</h4>
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <img src="assets/soundsnapz-featured.png" alt="soundsnapz project featured thumbnail">
-        <div class="img-overlay">
-          <h2 class="light">Soundsnapz</h2>
-          <h4 class="light">case study</h4>
-        </div>   
-      </div>
-      <div class="project">
-        <img src="assets/artisan-featured.png" alt="artisan project featured thumbnail">
-        <div class="img-overlay">
-          <h2 class="light">Artisan Talent</h2>
-          <h4 class="light">case study</h4>
-        </div> 
-      </div>
-      <div class="project">
-        <img src="assets/valence-featured.jpg" alt="valence project featured thumbnail">
-        <div class="img-overlay">
-          <h2 class="light">Valence Transportation</h2>
-          <h4 class="light">case study</h4>
-        </div> 
-      </div>
-      <div class="project">
-        <img src="assets/weight-converter-featured.jpg" alt="weight converter project featured thumbnail">
-        <div class="img-overlay">
-          <h2 class="light">Weight Converter</h2>
-          <h4 class="light">case study</h4>
-        </div> 
-      </div>
+        <div class="project">
+          <img src="assets/soundsnapz-featured.png" alt="soundsnapz project featured thumbnail">
+          <div class="img-overlay">
+            <h2 class="light">Soundsnapz</h2>
+            <h4 class="light">case study</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/artisan-featured.png" alt="artisan project featured thumbnail">
+          <div class="img-overlay">
+            <h2 class="light">Artisan Talent</h2>
+            <h4 class="light">case study</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/valence-featured.jpg" alt="valence project featured thumbnail">
+          <div class="img-overlay">
+            <h2 class="light">Valence Transportation</h2>
+            <h4 class="light">case study</h4>
+          </div>
+        </div>
+        <div class="project">
+          <img src="assets/weight-converter-featured.jpg" alt="weight converter project featured thumbnail">
+          <div class="img-overlay">
+            <h2 class="light">Weight Converter</h2>
+            <h4 class="light">case study</h4>
+          </div>
+        </div>
 
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="primary-header text-right">
-      About
-    </div>
-    <div id="about-wrapper">
-      <div id="intro-wrapper">
-        <div id="intro-pic">
-          <img src="assets/samir.jpg" alt="samir profile pic">
-        </div>
-          
-        <div id="intro-copy">
-            <p>Hello! My name is Samir Muratovic and I am a full-stack web developer specializing in creating dynamic and beautiful web pages. I have been in the field for nearly 7 years, and have been loving every minute of it. I am a blogger, entrepreneur, designer, developer, and overall thinker. Check out some of the links below to see what I’ve been up to lately.</p>
-        </div>
       </div>
-    
-      <!-- <div id="skills">
-          <div class="skill-wrapper">
-            <div class="skill-item">
-              <div class="skill-item-text">
-                <h3>HTML5</h3>
-              </div>
-              <div class="skill-item-bar">
-                10 / 10
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-text">
-                <h3>CSS3</h3>
-              </div>
-              <div class="skill-item-bar rating-9">
-                9 / 10
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-text">
-                <h3>JavaScript</h3>
-              </div>
-              <div class="skill-item-bar rating-8">
-                8 / 10
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-text">
-                <h3>MySQL</h3>
-              </div>
-              <div class="skill-item-bar rating-8">
-                8 / 10
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-text">
-                <h3>PHP</h3>
-              </div>
-              <div class="skill-item-bar rating-7">
-                7 / 10
-              </div>
-            </div>
-              <div class="skill-item">
-                <div class="skill-item-text">
-                  <h3>Angular</h3>
-                </div>
-                <div class="skill-item-bar rating-7">
-                      7 / 10
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-item-text">
-                  <h3>Responsive Design</h3>
-                </div>
-                <div class="skill-item-bar rating-9">
-                      9 / 10
-                </div>
-              </div>
-              <div class="skill-item">
-                  <div class="skill-item-text">
-                    <h3>NodeJS</h3>
-                  </div>
-                  <div class="skill-item-bar rating-7">
-                        7 / 10
-                  </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item-text">
-                      <h3>MongoDB</h3>
-                    </div>
-                    <div class="skill-item-bar rating-7">
-                          7 / 10
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                      <div class="skill-item-text">
-                        <h3>Mobile Design</h3>
-                      </div>
-                      <div class="skill-item-bar rating-8">
-                            8 / 10
-                      </div>
-                    </div>
-          </div>  End skill-wrapper -->
-        <!-- </div> End skills --> 
+    </section>
+
+    <section id="about">
+      <div class="primary-header text-right">
+        About
+      </div>
+      <div id="about-wrapper">
+        <div id="intro-wrapper">
+          <div id="intro-pic">
+            <img src="assets/samir.jpg" alt="samir profile pic">
+          </div>
+
+          <div id="intro-copy">
+            <p>Hello! My name is Samir Muratovic and I am a full-stack web developer specializing in creating dynamic and beautiful
+              web pages. I have been in the field for nearly 7 years, and have been loving every minute of it. I am a blogger,
+              entrepreneur, designer, developer, and overall thinker. Check out some of the links below to see what I’ve
+              been up to lately.</p>
+          </div>
+        </div>
 
         <div id="career">
           <div id="career-wrapper">
             <div class="career-item-wrapper">
-            <div class="career-left">
-              <div class="career-item position">
-                  Front-end Engineer
-              </div>
-              <div class="career-item company">
-                Pixodime, LLC
-              </div>
-              <div class="career-item dates">
-                Jul. 2016 - Present
-              </div>
-            </div>
-            <div class="career-right">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a, provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
-            </div>
-          </div> <!-- End career-item-wrapper -->
-          <div class="career-item-wrapper">
-            <div class="career-left">
+              <div class="career-left">
                 <div class="career-item position">
-                    Web Developer
+                  Front-end Engineer
+                </div>
+                <div class="career-item company">
+                  Pixodime, LLC
+                </div>
+                <div class="career-item dates">
+                  Jul. 2016 - Present
+                </div>
+              </div>
+              <div class="career-right">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident
+                sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione
+                tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a,
+                provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
+              </div>
+            </div>
+            <!-- End career-item-wrapper -->
+            <div class="career-item-wrapper">
+              <div class="career-left">
+                <div class="career-item position">
+                  Web Developer
                 </div>
                 <div class="career-item company">
                   Mercy Tech Solutions
@@ -213,28 +167,36 @@
                 </div>
               </div>
               <div class="career-right">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a, provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident
+                sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione
+                tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a,
+                provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
               </div>
-            </div> <!-- End career-item-wrapper -->
+            </div>
+            <!-- End career-item-wrapper -->
             <div class="career-item-wrapper">
-                <div class="career-left">
-                    <div class="career-item position">
-                        IT Project Manager
-                    </div>
-                    <div class="career-item company">
-                      Maritz Travel Company
-                    </div>
-                    <div class="career-item dates">
-                      Nov. 2013 - Nov. 2015
-                    </div>
-                  </div>
-                  <div class="career-right">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a, provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
-                  </div>
-                </div> <!-- End career-item-wrapper -->            
+              <div class="career-left">
+                <div class="career-item position">
+                  IT Project Manager
+                </div>
+                <div class="career-item company">
+                  Maritz Travel Company
+                </div>
+                <div class="career-item dates">
+                  Nov. 2013 - Nov. 2015
+                </div>
+              </div>
+              <div class="career-right">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident
+                sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione
+                tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a,
+                provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
+              </div>
+            </div>
+            <!-- End career-item-wrapper -->
           </div>
         </div>
-    
+
         <div id="tools">
           <div id="tools-wrapper">
             <div class="tool">
@@ -245,7 +207,7 @@
             </div>
             <div class="tool">
               <i class="icon-git"></i>
-            </div>            
+            </div>
             <div class="tool">
               <i class="icon-html5-alt"></i>
             </div>
@@ -263,7 +225,7 @@
             </div>
             <div id="php" class="tool">
               <i class="icon-php-alt"></i>
-            </div>            
+            </div>
             <div class="tool">
               <i class="icon-angular"></i>
             </div>
@@ -279,52 +241,63 @@
             <div class="tool">
               <i class="icon-mobile-device"></i>
             </div>
-          </div> <!-- End tools-wrapper -->
+          </div>
+          <!-- End tools-wrapper -->
         </div>
-    </div>
-  </section>
-
-  <footer>
-    
-    <div class="vertical-flex-wrapper">
-    
-    <div id="social-links">
-      <div class="social-link">
-        <a href="http://github.com/samirsilla" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <div class="social-link">
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <div class="social-link">
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <div class="social-link">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      </div>
-    </div>
-    <div id="copyright">
-      Copyright &copy; 2018 Samir Muratovic. All Rights Reserved.
-    </div>
-    <div id="privacy-links">
-      <div class="privacy-link">
-        <a href="#">Privacy Policy</a>
-      </div>
-      <div class="green-line">
+    </section>
+
+    <footer>
+
+      <div class="vertical-flex-wrapper">
+
+        <div id="social-links">
+          <div class="social-link">
+            <a href="http://github.com/samirsilla" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <div id="copyright">
+          Copyright &copy; 2018 Samir Muratovic. All Rights Reserved.
+        </div>
+        <div id="privacy-links">
+          <div class="privacy-link">
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="green-line">
+
+          </div>
+          <div class="privacy-link">
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+        <div id="author-brand">
+          Website by
+          <a href="#" id="author-font">smr.</a>
+        </div>
+
 
       </div>
-      <div class="privacy-link">
-        <a href="#">Terms of Use</a>
-      </div>
-    </div>
-    <div id="author-brand">
-      Website by <a href="#" id="author-font">smr.</a>
-    </div>
+    </footer>
 
-
-  </div> 
-  </footer>
-
-</div> <!-- End main-content-wrapper -->
+  </div>
+  <!-- End main-content-wrapper -->
 
 
 
@@ -333,7 +306,8 @@
 
 
 
-<script src="js/main.js"></script> 
-<script src="js/typer.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/typer.js"></script>
 </body>
+
 </html>

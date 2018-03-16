@@ -1,13 +1,17 @@
 var sidebar = document.getElementById('sidebar');
 var menuBtn = document.getElementById('menu-btn');
-
+var navMenu = document.getElementById('menu');
+var aboutLink = document.getElementById('about-link');
+var portfolioLink = document.getElementById('portfolio-link');
+var closeIcon = document.getElementById('close');
 
 menuBtn.addEventListener('click', menuBtnClicked);
 menuBtn.addEventListener('mouseover', changeSidebarBorder);
 menuBtn.addEventListener('mouseout', originalSidebarBorder);
 
-
-
+aboutLink.addEventListener('click', menuBtnClicked);
+portfolioLink.addEventListener('click', menuBtnClicked);
+closeIcon.addEventListener('click', menuBtnClicked);
 
 let counter = 0;
 
@@ -21,13 +25,15 @@ function menuBtnClicked(e) {
 }
 
 function openSidebarMenu() {
-  sidebar.style.transform = 'translateX(80vh)';
-  sidebar.style.width = '20vh';
-  sidebar.style.backgroundColor = 'rgba(211, 211, 211, 0.3)';
+  sidebar.style.transform = 'translateX(80vw)';
+  sidebar.style.width = '20vw';
+  sidebar.style.backgroundColor = 'rgba(180, 180, 180, 0.6)';
+  navMenu.style.transform = "translateX(80vw)";
 }
 
 function closeSidebarMenu() {
-  sidebar.style.transform = 'translateX(0px)';
+  navMenu.style.transform = 'translateX(-20vw)';
+  sidebar.style.transform = 'translateX(0vw)';
   sidebar.style.width = '50px';
   sidebar.style.backgroundColor = 'inherit';
 }
