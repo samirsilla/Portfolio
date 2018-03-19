@@ -29,7 +29,6 @@ function openSidebarMenu() {
   sidebar.style.width = '20vw';
   sidebar.style.backgroundColor = 'rgba(180, 180, 180, 0.6)';
   navMenu.style.transform = "translateX(80vw)";
-  menuBtn.style.boxShadow = '0 0 0 #eee';
 }
 
 function closeSidebarMenu() {
@@ -37,7 +36,6 @@ function closeSidebarMenu() {
   sidebar.style.transform = 'translateX(0vw)';
   sidebar.style.width = '50px';
   sidebar.style.backgroundColor = 'inherit';
-  menuBtn.style.boxShadow = '0 5px 5px #eee';
 }
 
 function changeSidebarBorder(e) {

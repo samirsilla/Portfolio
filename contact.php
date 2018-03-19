@@ -1,13 +1,18 @@
 <?php include('form.php'); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Samir Muratovic | Get in Touch</title>
+  <meta name="author" content="Samir Muratovic">
+  <meta name="copyright" content="Samir Muratovic">
+  <meta name="topic" content="Web Development">
+  <meta name="description" content="Samir Muratovic is a professional web developer specializing in responsive front-end design.">
+  <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Bootstrap,front-end,developer,web developer, web design, web designer, design, website development, responsive, mobile design,professional">
+  <title>Samir Muratovic - Get in Touch</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
@@ -16,12 +21,38 @@
   <aside id="sidebar">
     <a id="menu-btn">MENU</a>
   </aside>
+  <section id="menu">
+    <div id="close">
+      <i class="fas fa-times"></i>
+    </div>
+    <div id="nav">
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="#projects">
+            <li id="portfolio-link">Portfolio</li>
+          </a>
+          <a href="#about">
+            <li id="about-link">About</li>
+          </a>
+          <a href="contact.php">
+            <li>Contact</li>
+          </a>
+          <a href="blog.html">
+            <li>Blog</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </section>
   <div class="main-content-wrapper">
-    <header>
+  <header>
       <div id="brand">
-        <img src="assets/logo.jpg" alt="samir-logo">
+        <h2>smr.</h2>
       </div>
-    </header>
+  </header>
 
 
     <section id="contact-form-section">
