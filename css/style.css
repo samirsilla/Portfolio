@@ -49,6 +49,10 @@ h4 {
   line-height: 1.5em;
 }
 
+.container {
+  margin: 50px 100px;
+}
+
 #sidebar {
   width: 50px;
   position: fixed;
@@ -86,26 +90,26 @@ h4 {
   color: #55f7d4;
 }
 
-#nav {
+nav {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: center;
   height: 100%;
+  margin: 0 20%;
 }
 
-#nav li {
-  list-style-type: none;
+nav a {
   font-size: 6em;
   font-weight: 900;
   line-height: 1em;
-  margin: 70px 0;
+  margin: 30px 0;
   transition: 200ms color;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-#nav li:hover {
+nav a:hover {
   color: #55f7d4;
 }
 
@@ -133,9 +137,9 @@ h4 {
   background-color: #ddd;
 }
 
-.main-content-wrapper {
-  margin-left: 100px;
-  padding: 10px 100px 50px 0;
+main {
+  /* margin-left: 100px;
+  padding: 10px 100px 50px 0; */
 }
 
 header {
@@ -143,6 +147,7 @@ header {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  margin: 0 100px;
 }
 
 header h2 {
@@ -313,7 +318,7 @@ header h2 {
 
 /* Career */
 
-#career {
+#career-wrapper {
   margin: 100px 0;
 }
 
@@ -364,7 +369,6 @@ header h2 {
 /* Footer */
 
 footer {
-  margin-top: 50px;
   text-align: center;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -486,12 +490,9 @@ footer {
 
 /* Contact Page */
 
-#contact-form-section {
-  width: 80%;
-  margin: 0 auto 50px auto;
-}
-
 #contact-form-wrapper {
+  width: 65%;
+  margin: 0 auto 50px auto;
   padding: 50px 50px; 
   text-align: center;
 }
@@ -505,7 +506,7 @@ footer {
   font-size: 1.2em;
   border-radius: 4px;
   border: 1px solid #aaa;
-  margin: 15px 0;
+  margin: 20px 0;
   background-color: inherit;
   color: #555;
 }
@@ -556,7 +557,7 @@ footer {
 
 /* Hero Section */
 
-#case-study-hero-section {
+#case-study-hero {
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -615,18 +616,17 @@ footer {
 
 /* Client Intro Section */
 
-#client-intro-section * p {
-  font-size: 1em;
-  line-height: 2em;
-  /* border-bottom: 1px solid #ddd; */
-}
-
 #client-intro-wrapper {
   margin-top: 100px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+#client-intro-wrapper * p {
+  font-size: 1em;
+  line-height: 2em;
 }
 
 .client-logo {
@@ -695,7 +695,8 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding-top: 50px;
+  padding-bottom: 25px;
   /* background-color: #ddd; */
 }
 
@@ -712,7 +713,7 @@ footer {
   /* padding: 0; */
 }
 
-#client-project-image-section {
+#finished-product-hero {
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -726,13 +727,13 @@ footer {
   background-image: url(../assets/pixodime-back.png);
 }
 
-#client-project-overlay {
+#finished-product-overlay {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#client-image-wrapper {
+#finished-product-images {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -742,37 +743,20 @@ footer {
   margin: 0 auto;
 }
 
-.client-images {
+.product-image {
   margin: 0 10px;
-  /* height: 50%; */
-  /* width: 80%; */
-  /* background-color: coral; */
-  /* margin: 0 auto; */
 }
 
-.client-images img {
+.product-image img {
   width: 100%;
   height: 100%;
   transform-origin: 0 0;
   transform: translateY(40px);
 }
 
-#showcase {
-  /* height: 800px; */
-  margin: 100px 0;
-  /* background-color: coral; */
-}
-
-#slider-wrapper {
-  height: 600px;
-  width: 100%;
-  background-color: skyblue;
-  overflow: hidden;
-  padding: 100px 0;
-}
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-wrapper {
   max-width: 100%;
   max-height: 700px;
   position: relative;
@@ -817,6 +801,10 @@ footer {
   transition: background-color 0.6s ease;
 }
 
+#img-circles-wrapper {
+  text-align: center;
+}
+
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -847,7 +835,7 @@ footer {
 #slideshow-copy > p {
   font-size: 1em;
   line-height: 2em;
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -860,10 +848,7 @@ footer {
 #contact-cta-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  /* justify-content: center; */
-  /* align-content: center; */
   align-items: center;
-  /* width: 70%; */
   text-align: center;
   padding: 50px 200px ;
   border-top: 1px solid #eee;
@@ -871,42 +856,36 @@ footer {
 }
 
 .contact-cta {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 #case-studies-links {
-  height: 300px;
-  /* margin: 50px 0; */
+  /* height: 400px; */
 }
 
 #case-studies-wrapper {
-  height: 100%; 
+  height: 400px; 
   width: 100%;
-  background-color: skyblue;
   display: flex;
   flex-flow: row nowrap;
+  padding: 50px 0;
+  /* overflow: hidden; */
 }
 
 .case-study-link {
-  height: 100%;
-  width: 100%;
+  width: 50%;
   background-color: #ddd;
   flex-basis: 50%;
-  /* position: relative; */
-}
-
-#case-previous, #case-next {
-  position: relative;
+  overflow: hidden;
 }
 
 .case-link-overlay {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* z-index: 20; */
   color: #fff;
   display: flex;
   flex-flow: column nowrap;
@@ -918,14 +897,16 @@ footer {
 }
 
 .case-link-overlay:hover {
-  /* color: #aaa; */
   background-color: rgba(85, 247, 212, 0.85);
 }
 
-#case-studies-links * img {
+.case-study-link > img {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+}
+
+#case-previous, #case-next {
+  position: relative;
 }
 
 .alpha-1 {

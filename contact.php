@@ -21,58 +21,46 @@
   <aside id="sidebar">
     <a id="menu-btn">MENU</a>
   </aside>
-  <section id="menu">
+  <div id="menu">
     <div id="close">
       <i class="fas fa-times"></i>
     </div>
-    <div id="nav">
-      <nav>
-        <ul>
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="#projects">
-            <li id="portfolio-link">Portfolio</li>
-          </a>
-          <a href="#about">
-            <li id="about-link">About</li>
-          </a>
-          <a href="contact.php">
-            <li>Contact</li>
-          </a>
-          <a href="blog.html">
-            <li>Blog</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
-  </section>
-  <div class="main-content-wrapper">
+    <!-- #close -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a id="portfolio-link" href="index.html#projects">Portfolio</a>
+      <a id="about-link" href="index.html#about">About</a>
+      <a href="contact.php">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </div> <!-- #menu -->
+
   <header>
-      <div id="brand">
-        <h2>smr.</h2>
-      </div>
+    <div id="brand">
+      <h2>smr.</h2>
+    </div>
+    <!-- #brand -->
   </header>
 
+  <section>
+    <div id="contact-form-wrapper">
+      <h2 id="contact-header">Got a project idea? Just want to say hello? Shoot me a quick message!</h2>
+      <form id="contact-form" method="post" action="<?= $_SERVER['PHP_SELF'] ?>">
+        <input class="input-box" id="name" name="name" type="text" placeholder="Name" value="<?= $name ?>">
+        <input class="input-box" id="email" name="email" type="email" placeholder="Email" value="<?= $email ?>">
+        <textarea class="input-box" type="text" id="message" name="message" value="<?= $message ?>" cols="30" rows="10" placeholder="Message"></textarea>
+        <input class="primary-link" id="submit-btn" type="submit" name="submit-btn" value="Send Message">
 
-    <section id="contact-form-section">
-      <div id="contact-form-wrapper">
-        <h2 id="contact-header">Got a project idea? Just want to say hello? Shoot me a quick message!</h2>
-        <form id="contact-form" method="post" action="<?= $_SERVER['PHP_SELF'] ?>">
-          <input class="input-box" id="name" name="name" type="text" placeholder="Name" value="<?= $name ?>">
-          <input class="input-box" id="email" name="email" type="email" placeholder="Email" value="<?= $email ?>">
-          <textarea class="input-box" type="text" id="message" name="message" value="<?= $message ?>" cols="30" rows="10" placeholder="Message"></textarea>
-          <input class="primary-link" id="submit-btn" type="submit" name="submit-btn" value="Send Message">
-          
-          <div class="error"><?= $display_error ?></div>
+        <div class="error">
+          <?= $display_error ?>
+        </div>
 
-        </form>
-      </div>
-    </section>
+      </form>
+    </div>
+    <!-- #contact-form-wrapper -->
+  </section>
 
-
-
-
+  <div class="container">
     <footer>
       <div class="vertical-flex-wrapper">
         <div id="social-links">
@@ -81,22 +69,27 @@
               <i class="fab fa-github"></i>
             </a>
           </div>
+          <!-- .social-link -->
           <div class="social-link">
             <a href="#" target="_blank">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
+          <!-- .social-link -->
           <div class="social-link">
             <a href="#" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
+          <!-- .social-link -->
           <div class="social-link">
             <a href="#" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
           </div>
+          <!-- .social-link -->
         </div>
+        <!-- #social-links -->
         <div id="copyright">
           Copyright &copy; 2018 Samir Muratovic. All Rights Reserved.
         </div>
@@ -111,14 +104,18 @@
             <a href="#">Terms of Use</a>
           </div>
         </div>
+        <!-- #privacy-links -->
         <div id="author-brand">
           Website by
           <a href="#" id="author-font">smr.</a>
         </div>
+        <!-- #author-brand -->
       </div>
+      <!-- .vertical-flex-wrapper -->
     </footer>
   </div>
-  <!-- End main-content-wrapper -->
+  <!-- .container -->
   <script src="js/main.js"></script>
 </body>
+
 </html>

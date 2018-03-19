@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,227 +12,245 @@
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Bootstrap,front-end,developer,web developer, web design, web designer, design, website development, responsive, mobile design,professional">
   <title>Samir Muratovic - Professional Web Developer</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
 </head>
+
 <body>
   <svg id="svg-1" width="80" height="80">
-    <rect id="square-1" width="80" height="80"/>
+    <rect id="square-1" width="80" height="80" />
   </svg>
   <svg id="svg-2" width="150" height="150">
-      <circle id="circle" cx="75" cy="75", r="75"/>
+    <circle id="circle" cx="75" cy="75" r="75" />
   </svg>
   <aside id="sidebar">
     <a id="menu-btn">MENU</a>
   </aside>
-  <section id="menu">
+  <div id="menu">
     <div id="close">
       <i class="fas fa-times"></i>
     </div>
-    <div id="nav">
-    
-      <nav>
-        <ul>
-          <a href="index.html">
-            <li>Home</li>
-          </a>
-          <a href="#projects">
-            <li id="portfolio-link">Portfolio</li>
-          </a>
-          <a href="#about">
-            <li id="about-link">About</li>
-          </a>
-          <a href="contact.php">
-            <li>Contact</li>
-          </a>
-          <a href="blog.html">
-            <li>Blog</li>
-          </a>
-        </ul>
-      </nav>
+    <!-- #close -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a id="portfolio-link" href="#projects">Portfolio</a>
+      <a id="about-link" href="#about">About</a>
+      <a href="contact.php">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </div> <!-- #menu -->
+
+  <header>
+    <div id="brand">
+      <h2>smr.</h2>
     </div>
-  </section>
-  <div class="main-content-wrapper">
-    <header>
-      <div id="brand">
-        <h2>smr.</h2>
-      </div>
-    </header>
-    <section id="hero">
-      <h1>I'm a professional web developer with a passion for
-        <span class="typer" id="typer" data-words="beautiful,responsive,mobile-friendly,minimal,purposeful,results-driven" data-delay="100"
-          data-deleteDelay="4000"></span>
-        <span class="cursor" data-owner="typer"></span>design.</h1>
-      <a class="primary-link center" href="contact.php">say hello</a>
-    </section>
-    <section id="projects">
-      <!-- <div class="primary-header text-right">
-      Portfolio
-    </div> -->
-      <div id="projects-wrapper">
-        <div class="project">
-          <img src="assets/soundsnapz-featured.png" alt="pixodime project featured thumbnail">
-          <a href="pixodime.html"><div class="img-overlay">
-            <h2 class="light">Pixodime</h2>
-            <h4 class="light">case study</h4>
-          </div></a>
+    <!-- #brand -->
+  </header>
+  <div class="container">
+    <main>
+      <section id="hero">
+        <h1>I'm a professional web developer with a passion for
+          <span class="typer" id="typer" data-words="beautiful,responsive,mobile-friendly,minimal,purposeful,results-driven" data-delay="100"
+            data-deleteDelay="4000"></span>
+          <span class="cursor" data-owner="typer"></span>design.</h1>
+        <a class="primary-link center" href="contact.php">say hello</a>
+      </section>
+
+      <section id="projects">
+        <div id="projects-wrapper">
+          <article class="project">
+            <img src="assets/soundsnapz-featured.png" alt="pixodime project featured thumbnail">
+            <a href="pixodime.html">
+              <div class="img-overlay">
+                <h2 class="light">Pixodime</h2>
+                <h4 class="light">case study</h4>
+              </div>
+              <!-- .img-overlay -->
+            </a>
+          </article>
+          <article class="project">
+            <img src="assets/pixodime-featured.jpg" alt="soundsnapz project featured thumbnail">
+            <a href="#">
+              <div class="img-overlay">
+                <h2 class="light">Soundsnapz</h2>
+                <h4 class="light">case study</h4>
+              </div>
+              <!-- .img-overlay -->
+            </a>
+          </article>
+          <article class="project">
+            <img src="assets/artisan-featured.png" alt="artisan project featured thumbnail">
+            <div class="img-overlay">
+              <h2 class="light">Artisan Talent</h2>
+              <h4 class="light">case study</h4>
+            </div>
+            <!-- .img-overlay -->
+          </article>
+          <article class="project">
+            <img src="assets/valence-featured.jpg" alt="valence project featured thumbnail">
+            <div class="img-overlay">
+              <h2 class="light">Valence Transportation</h2>
+              <h4 class="light">case study</h4>
+            </div>
+            <!-- .img-overlay -->
+          </article>
+          <article class="project">
+            <img src="assets/weight-converter-featured.jpg" alt="weight converter project featured thumbnail">
+            <div class="img-overlay">
+              <h2 class="light">Weight Converter</h2>
+              <h4 class="light">case study</h4>
+            </div>
+            <!-- .img-overlay -->
+          </article>
         </div>
-        <div class="project">
-          <img src="assets/pixodime-featured.jpg" alt="soundsnapz project featured thumbnail">
-          <a href="#"><div class="img-overlay">
-            <h2 class="light">Soundsnapz</h2>
-            <h4 class="light">case study</h4>
-          </div></a>
-        </div>
-        <div class="project">
-          <img src="assets/artisan-featured.png" alt="artisan project featured thumbnail">
-          <div class="img-overlay">
-            <h2 class="light">Artisan Talent</h2>
-            <h4 class="light">case study</h4>
+        <!-- #projects-wrapper -->
+      </section>
+
+      <section id="about">
+        <div id="about-wrapper">
+          <div id="intro-wrapper">
+            <div id="intro-pic">
+              <img src="assets/samir.jpg" alt="samir profile pic">
+            </div>
+            <!-- #intro-pic -->
+            <div id="intro-copy">
+              <p>Hello! My name is Samir Muratovic and I am a full-stack web developer specializing in creating dynamic and
+                beautiful web pages. I have been in the field for nearly 7 years, and have been loving every minute of it.
+                I am a blogger, entrepreneur, designer, developer, and overall thinker. Check out some of the links below
+                to see what I’ve been up to lately.</p>
+            </div>
+            <!-- #intro-copy -->
           </div>
-        </div>
-        <div class="project">
-          <img src="assets/valence-featured.jpg" alt="valence project featured thumbnail">
-          <div class="img-overlay">
-            <h2 class="light">Valence Transportation</h2>
-            <h4 class="light">case study</h4>
-          </div>
-        </div>
-        <div class="project">
-          <img src="assets/weight-converter-featured.jpg" alt="weight converter project featured thumbnail">
-          <div class="img-overlay">
-            <h2 class="light">Weight Converter</h2>
-            <h4 class="light">case study</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div id="about-wrapper">
-        <div id="intro-wrapper">
-          <div id="intro-pic">
-            <img src="assets/samir.jpg" alt="samir profile pic">
-          </div>
-          <div id="intro-copy">
-            <p>Hello! My name is Samir Muratovic and I am a full-stack web developer specializing in creating dynamic and beautiful
-              web pages. I have been in the field for nearly 7 years, and have been loving every minute of it. I am a blogger,
-              entrepreneur, designer, developer, and overall thinker. Check out some of the links below to see what I’ve
-              been up to lately.</p>
-          </div>
-        </div>
-        <div id="career">
+          <!-- #intro-wrapper -->
           <div id="career-wrapper">
             <div class="career-item-wrapper">
               <div class="career-left">
                 <div class="career-item position">
                   Front-end Engineer
                 </div>
+                <!-- .career-item position -->
                 <div class="career-item company">
                   Pixodime, LLC
                 </div>
+                <!-- .career-item company -->
                 <div class="career-item dates">
                   Jul. 2016 - Present
                 </div>
+                <!-- .career-item dates -->
               </div>
+              <!-- .career-left -->
               <div class="career-right">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident
                 sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione
                 tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a,
                 provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
               </div>
+              <!-- .career-right -->
             </div>
-            <!-- End career-item-wrapper -->
+            <!-- .career-item-wrapper -->
             <div class="career-item-wrapper">
               <div class="career-left">
                 <div class="career-item position">
                   Web Developer
                 </div>
+                <!-- .career-item position -->
                 <div class="career-item company">
                   Mercy Tech Solutions
                 </div>
+                <!-- .careeritem company -->
                 <div class="career-item dates">
                   Nov. 2015 - Aug. 2016
                 </div>
+                <!-- .career-item dates -->
               </div>
+              <!-- .career-left -->
               <div class="career-right">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident
                 sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione
                 tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a,
                 provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
               </div>
+              <!-- .career-right -->
             </div>
-            <!-- End career-item-wrapper -->
+            <!-- .career-item-wrapper -->
             <div class="career-item-wrapper">
               <div class="career-left">
                 <div class="career-item position">
                   IT Project Manager
                 </div>
+                <!-- .career-item-position -->
                 <div class="career-item company">
                   Maritz Travel Company
                 </div>
+                <!-- .career-item-company -->
                 <div class="career-item dates">
                   Nov. 2013 - Nov. 2015
                 </div>
+                <!-- .career-item-dates -->
               </div>
+              <!-- .career-left -->
               <div class="career-right">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi blanditiis a autem quas molestias, quo rerum cupiditate provident
                 sint suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere debitis voluptate ratione
                 tempore ipsum iusto eius, non ab ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque a,
                 provident assumenda nisi dignissimos deserunt repellendus vitae reprehenderit nemo?
               </div>
+              <!-- .career-right -->
             </div>
-            <!-- End career-item-wrapper -->
+            <!-- .career-item-wrapper -->
+          </div>
+          <!-- #career-wrapper -->
+          <div id="tools">
+            <div id="tools-wrapper">
+              <div class="tool">
+                <i class="fab fa-apple"></i>
+              </div>
+              <div class="tool">
+                <i class="fab fa-windows"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-git"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-html5-alt"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-css3-alt"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-sass"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-bootstrap"></i>
+              </div>
+              <div id="js" class="tool">
+                <i class="icon-javascript-alt"></i>
+              </div>
+              <div id="php" class="tool">
+                <i class="icon-php-alt"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-angular"></i>
+              </div>
+              <div id="java" class="tool">
+                <i class="icon-java-bold"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-database"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-mysql-alt"></i>
+              </div>
+              <div class="tool">
+                <i class="icon-mobile-device"></i>
+              </div>
+            </div>
+            <!-- #tools-wrapper -->
           </div>
         </div>
-        <div id="tools">
-          <div id="tools-wrapper">
-            <div class="tool">
-              <i class="fab fa-apple"></i>
-            </div>
-            <div class="tool">
-              <i class="fab fa-windows"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-git"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-html5-alt"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-css3-alt"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-sass"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-bootstrap"></i>
-            </div>
-            <div id="js" class="tool">
-              <i class="icon-javascript-alt"></i>
-            </div>
-            <div id="php" class="tool">
-              <i class="icon-php-alt"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-angular"></i>
-            </div>
-            <div id="java" class="tool">
-              <i class="icon-java-bold"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-database"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-mysql-alt"></i>
-            </div>
-            <div class="tool">
-              <i class="icon-mobile-device"></i>
-            </div>
-          </div>
-          <!-- End tools-wrapper -->
-        </div>
-      </div>
-    </section>
+        <!-- #about-wrapper -->
+      </section>
+    </main>
     <footer>
       <div class="vertical-flex-wrapper">
         <div id="social-links">
@@ -240,22 +259,27 @@
               <i class="fab fa-github"></i>
             </a>
           </div>
+          <!-- .social-link -->
           <div class="social-link">
             <a href="#" target="_blank">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
+          <!-- .social-link -->
           <div class="social-link">
             <a href="#" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
+          <!-- .social-link -->
           <div class="social-link">
             <a href="#" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
           </div>
+          <!-- .social-link -->
         </div>
+        <!-- #social-links -->
         <div id="copyright">
           Copyright &copy; 2018 Samir Muratovic. All Rights Reserved.
         </div>
@@ -264,21 +288,24 @@
             <a href="#">Privacy Policy</a>
           </div>
           <div class="green-line">
-
           </div>
           <div class="privacy-link">
             <a href="#">Terms of Use</a>
           </div>
         </div>
+        <!-- #privacy-links -->
         <div id="author-brand">
           Website by
           <a href="#" id="author-font">smr.</a>
         </div>
+        <!-- #author-brand -->
       </div>
+      <!-- .vertical-flex-wrapper -->
     </footer>
   </div>
-  <!-- End main-content-wrapper -->
+  <!-- .container -->
   <script src="js/main.js"></script>
   <script src="js/typer.js"></script>
 </body>
+
 </html>
