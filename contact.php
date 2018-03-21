@@ -13,6 +13,9 @@
   <meta name="description" content="Samir Muratovic is a professional web developer specializing in responsive front-end design.">
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Bootstrap,front-end,developer,web developer, web design, web designer, design, website development, responsive, mobile design,professional">
   <title>Samir Muratovic - Get in Touch</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
@@ -28,8 +31,8 @@
     <!-- #close -->
     <nav>
       <a href="index.html">Home</a>
-      <a id="portfolio-link" href="index.html#projects">Portfolio</a>
-      <a id="about-link" href="index.html#about">About</a>
+      <a id="portfolio-link" href="index.html#projects-wrapper">Portfolio</a>
+      <a id="about-link" href="index.html#about-wrapper">About</a>
       <a href="contact.php">Contact</a>
       <a href="blog.html">Blog</a>
     </nav>
@@ -62,7 +65,7 @@
 
   <div class="container">
     <footer>
-      <div class="vertical-flex-wrapper">
+      <div id="footer-wrapper">
         <div id="social-links">
           <div class="social-link">
             <a href="http://github.com/samirsilla" target="_blank">

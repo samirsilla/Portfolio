@@ -1,0 +1,66 @@
+/* 
+    contact.css
+    contains styling for elements relevant only to the contact page
+*
+
+/* Contact Page */
+
+#contact-form-wrapper {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 50px; 
+}
+
+.input-box {
+    color: #555;
+    background-color: inherit;
+    font-size: 1.2em;
+    height: 60px;
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+  
+.input-box:focus {
+    box-shadow: 0 0 8px skyblue;
+    border: 1px solid skyblue;
+}
+  
+#message {
+    line-height: 1.5em;
+    height: 200px;
+    resize: none;
+}
+  
+#submit-btn {
+    color: #eee;
+    background-color: #333;
+    height: 70px;
+    width: 100%;
+    margin: 0px auto;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px #333;
+    transition: 400ms box-shadow;
+    cursor: pointer;
+}
+  
+#submit-btn:hover {
+    box-shadow: unset;
+}
+  
+#contact-header {
+    margin: 50px 0;
+}
+  
+.error {
+    color: skyblue;
+    font-size: 1.3em;
+    width: 100%;
+    margin-top: 50px;
+}

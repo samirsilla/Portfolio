@@ -1,0 +1,325 @@
+/* 
+    case-study.css
+    contains styling for elements relevant to the case study pages
+*/
+
+/* Case Study Clients */
+
+.pixodime {
+    background-image: url('../assets/pixodime/pixodime-hero.jpg');
+    filter: grayscale(100%);
+}
+
+.pixodime-product-hero {
+    background-image: url('../assets/pixodime/pixodime-back.png');
+}
+
+
+/* Hero Section */
+
+#hero-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+  
+.hero-overlay {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hero-overlay h1 {
+    margin: 25px 0;
+}
+  
+.hero-overlay li {
+    font-size: 1.5em;
+    font-style: italic;
+    display: inline-block;
+    margin: 25px 15px;
+}
+  
+.scroll-icon {
+    color: #eee;
+    font-size: 3em;
+    position: absolute;
+    bottom: 100px;
+    animation-name: scroll-icon-animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    opacity: 0.5;
+}
+  
+@keyframes scroll-icon-animate {
+    from {opacity: 0.11;}
+    to {opacity: 1; bottom: 50px;}
+}
+  
+/* Client Intro Section */
+  
+#client-intro-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+  
+#client-intro-wrapper * p {
+    font-size: 1em;
+    line-height: 2em;
+}
+  
+.client-logo {
+    height: 70px;
+}
+  
+#client-intro-copy {
+    padding: 50px 125px;
+}
+  
+#client-intro-copy p {
+    margin: 20px 0;
+    text-align: center;
+}
+  
+/* Challenge Approach Section */
+  
+#challenge-approach-wrapper {
+    background-color: #eee;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 70px 40px;
+}
+  
+#challenge-approach-wrapper * {
+    width: 85%;
+    margin: 0 auto;
+}
+  
+#challenge-approach-wrapper * p {
+    padding: 20px 0;
+    font-size: 1em;
+    color: #333;
+    line-height: 2;
+}
+  
+.two-col-copy {
+    flex-basis: 50%;
+}
+  
+/* Solution Section */
+  
+#solution-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+  
+#solution-wrapper > p {
+    font-size: 1em;
+    line-height: 2;
+    width: 60%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Finished Product Hero */
+  
+#finished-product-hero {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+  
+#finished-product-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+#finished-product-images {
+    height: 100%;
+    width: 98%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+  
+.product-image {
+    margin: 0 10px;
+}
+  
+.product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Slideshow Section */
+
+.slideshow-wrapper {
+    max-height: 700px;
+    max-width: 100%;
+    position: relative;
+    margin: 50px auto;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+#slideshow-header {
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.slides {
+      display: none;
+}
+
+.slides > img {
+    width: 100%;
+}
+  
+.prev, .next {
+    color: #ddd;
+    font-size: 1.5em;
+    padding: 20px;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+  
+.prev:hover, .next:hover {
+    color: #333;
+}
+  
+.dot {
+    background-color: #bbb;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+  
+#img-circles-wrapper {
+    text-align: center;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+}
+  
+#slideshow-copy > p {
+    font-size: 1em;
+    line-height: 2;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Contact CTA Section */
+  
+#contact-cta-wrapper {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px 200px ;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+  
+.contact-cta {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/* Next and Previous Thumbnails */
+  
+#case-studies-wrapper {
+    height: 400px; 
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 50px 0;
+}
+  
+.case-study-link {
+    width: 50%;
+    flex-basis: 50%;
+    overflow: hidden;
+}
+  
+.case-link-overlay {
+    background-color: #55f7d4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms background-color;
+    cursor: pointer;
+}
+  
+.case-link-overlay:hover {
+    background-color: rgba(85, 247, 212, 0.80);
+}
+  
+.case-study-link > img {
+    width: 100%;
+    height: 100%;
+}
+  
+#case-previous, #case-next {
+    position: relative;
+}
+  
+.alpha-1 {
+    background-color: rgba(150,150,150, 0.9);
+}
+  
+.alpha-2 {
+    background-color: rgba(0, 0, 0, 0.7);
+}

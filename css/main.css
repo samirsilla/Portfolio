@@ -1,0 +1,262 @@
+/* 
+    main.css
+    contains styling for global elements relevant to the entire site
+*/
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(../assets/Lato-Regular.ttf);
+}
+
+:root {
+    --main-font-family: Lato, helvetica, sans-serif;
+    --dark-gray: #333;
+    --heading-line-height: 1.5;
+}
+
+body {
+    font: 100%/1.5 var(--main-font-family);
+}
+  
+a {
+    color: var(--dark-gray);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 900;
+    line-height: var(--heading-line-height);
+}
+
+h2 {
+    font-size: 3.0em;
+    font-weight: 900;
+    line-height: var(--heading-line-height);
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+    line-height: var(--heading-line-height);
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: var(--heading-line-height);
+}
+
+.section-heading {
+    color: #333;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.subheading {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 100px;
+}
+
+header h2 {
+    color: #ddd;
+    text-align: right;
+}
+
+/* Slide Nav Menu */
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin: 0 20%;
+  }
+  
+nav a {
+    font: 900 6em/1 var(--main-font-family);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 30px 0;
+    transition: 200ms color;
+}
+
+nav a:hover {
+    color: #55f7d4;
+}
+
+#sidebar {
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: 6px solid #55f7d4;
+    transition: 400ms ease-out;
+    z-index: 20;
+}
+  
+#menu {
+    background-color: #fff;
+    height: 100%;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    left: -80vw;
+    transition: 400ms ease-out;
+    overflow: hidden;
+    z-index: 100;
+}
+  
+#close {
+    color: var(--dark-gray);
+    font-size: 3em;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    transition: 300ms ease-out;
+    cursor: pointer;
+}
+  
+#close:hover {
+    color: #55f7d4;
+}
+  
+#menu-btn {
+    background-color: #55f7d4;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    position: fixed;
+    top: 220px;
+    left: 0px;
+    padding: 9px 25px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-tranform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transition: 400ms ease-out background-color;
+    cursor: pointer;
+    overflow: hidden;
+}
+  
+#menu-btn:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+  
+#footer-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 50px 0;
+}
+  
+#social-links {
+    font-size: 1.6em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+  
+.social-link a {
+    margin: 0 10px;
+    transition: 200ms color;
+}
+  
+.social-link a:hover {
+    color: #55f7d4;
+}
+  
+#copyright {
+   margin: 20px 0;
+}
+  
+#privacy-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.privacy-link {
+    padding: 0 3px;
+    transition: 400ms box-shadow;
+}
+  
+.privacy-link:hover {
+    box-shadow: 150px 0px #a4fbe7 inset;
+}
+  
+.green-line {
+    background-color: #55f7d4;
+    height: 3px;
+    width: 50px;
+    margin: 0 20px;
+}
+  
+#author-brand {
+    color: #aaa;
+    margin-top: 50px;
+}
+  
+#author-font {
+    color: #aaa;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0 3px;
+    transition: 200ms color;
+}
+  
+#author-font:hover {
+    color: #55f7d4;
+}
+
+/*  */
+
+.primary-link {
+    font-family: helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding: 15px 25px;
+    background-color: #ddd;
+    transition: 400ms ease-out;
+    color: var(--dark-gray);
+}
+  
+.primary-link:hover {
+    background-color: #55f7d4;
+}
+
+.light {
+    color: #fff;
+}
+
+.container {
+    margin: 50px 100px;
+}

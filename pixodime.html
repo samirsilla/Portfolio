@@ -11,7 +11,9 @@
   <meta name="description" content="Samir Muratovic is a professional web developer specializing in responsive front-end design.">
   <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Bootstrap,front-end,developer,web developer, web design, web designer, design, website development, responsive, mobile design,professional">
   <title>Samir Muratovic - Pixodime Case Study</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/case-study.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
 
@@ -26,8 +28,8 @@
       <!-- #close -->
       <nav>
         <a href="index.html">Home</a>
-        <a id="portfolio-link" href="index.html#projects">Portfolio</a>
-        <a id="about-link" href="index.html#about">About</a>
+        <a id="portfolio-link" href="index.html#projects-wrapper">Portfolio</a>
+        <a id="about-link" href="index.html#about-wrapper">About</a>
         <a href="contact.php">Contact</a>
         <a href="blog.html">Blog</a>
       </nav>
@@ -35,8 +37,8 @@
 
 
   <section>
-    <div id="case-study-hero" class="pixodime">
-      <div class="case-study-hero-overlay alpha-1">
+    <div id="hero-wrapper" class="pixodime">
+      <div class="hero-overlay alpha-1">
         <h1>Pixodime, LLC</h1>
         <ul>
           <li>Website Design</li>
@@ -76,16 +78,16 @@
 
       <section>
         <div id="challenge-approach-wrapper">
-          <div id="challenge">
-            <h2 class="case-study-header">The Challenge</h2>
+          <div class="two-col-copy">
+            <h2 class="section-heading">The Challenge</h2>
             <p>When Pixodime approached me, some of their biggest website priorities were improving user experience and search
               engine ranking, having an easy-to-use CMS for rapid content creation, and creating a mobile-friendly design
               to accommodate the 70+% of customers who preferred viewing the site on a mobile device.</p>
           </div>
           <!-- #challenge -->
 
-          <div id="approach">
-            <h2 class="case-study-header">The Approach</h2>
+          <div class="two-col-copy">
+            <h2 class="section-heading">The Approach</h2>
             <p>With these goals in mind, our creative team came together (family-style) and dug in. We started with creating
               a fully mobile-optimized site that can be viewed on any device, with a sticky navigation bar that invites users
               to get a taste of other pages on the website. In terms of user experience, we developed a custom geo-tracker
@@ -99,14 +101,14 @@
 
       <section>
         <div id="solution-wrapper">
-          <h2 class="case-study-header">
-            Solution
+          <h2 class="section-heading">
+            The Solution
           </h2>
-          <h3 class="case-study-subheader">Re-engineered Pixodime Website</h3>
+          <h3 class="subheading">Re-engineered Pixodime Website</h3>
           <p>It started with great meatballs. And like a glass of fine wine, what it needed was a great website to pair with
             it. Our team took the Buca brand and spiced up its digital presence to give their business the kick it needed
             to grow even more. See the finished product here.</p>
-          <a class="primary-link client-site" href="http://pixodime.webflow.io" target="_blank">view site</a>
+          <a class="primary-link" href="http://pixodime.webflow.io" target="_blank">view site</a>
         </div>
         <!-- #solution-wrapper -->
       </section>
@@ -115,7 +117,7 @@
   <!-- End container -->
 
   <section>
-    <div id="finished-product-hero" class="pixodime-back">
+    <div id="finished-product-hero" class="pixodime-product-hero">
       <div id="finished-product-overlay">
         <div id="finished-product-images">
           <div class="product-image">
@@ -136,37 +138,37 @@
 
     <section>
       <div id="slideshow-header">
-        <h2 class="case-study-header">Blending Well-Crafted Design with Sharp Engineering</h2>
+        <h2 class="section-heading">Blending Well-Crafted Design with Sharp Engineering</h2>
       </div>
       <div class="slideshow-wrapper">
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-showcase-1.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-2.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-3.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-4.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-5.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-6.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-7.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-8.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-9.png" alt="pixodime website">
         </div>
-        <div class="mySlides fade">
+        <div class="slides fade">
           <img src="assets/pixodime/pixodime-slide-10.png" alt="pixodime website">
         </div>
       </div>
@@ -214,7 +216,7 @@
         <article id="case-previous" class="case-study-link">
           <img src="assets/soundsnapz/soundsnapz-featured.png" alt="soundsnapz case study">
           <a href="#">
-            <div class="case-link-overlay alpha-2">
+            <div class="case-link-overlay light alpha-2">
               <h2>Soundsnapz</h2>
               <h4>previous case study</h4>
             </div>
@@ -225,7 +227,7 @@
         <article id="case-next" class="case-study-link">
           <img src="assets/artisan/artisan-featured.png" alt="artisan talent case study">
           <a href="#">
-            <div class="case-link-overlay alpha-2">
+            <div class="case-link-overlay light alpha-2">
               <h2>Artisan Talent</h2>
               <h4>next case study</h4>
             </div>
@@ -238,7 +240,7 @@
     </main>
 
     <footer>
-      <div class="vertical-flex-wrapper">
+      <div id="footer-wrapper">
         <div id="social-links">
           <div class="social-link">
             <a href="http://github.com/samirsilla" target="_blank">

@@ -1,0 +1,213 @@
+/* 
+    index.css
+    contains styling for elements relevant to only the home page
+*/
+
+/* Hero Section */
+
+#hero-wrapper {
+    height: 60vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 100px 0;
+}
+  
+#hero-wrapper h1 {
+    margin-bottom: 50px;
+}
+  
+/* Projects Section  */
+  
+#projects-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+  
+.project {
+    height: 350px;
+    flex-basis: 100%;
+    position: relative;
+    overflow: hidden;
+}
+  
+.project img {
+    width: 100%;
+}
+  
+.img-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: 350ms ease-out opacity;
+    opacity: 0;
+    z-index: 10;
+}
+  
+.img-overlay:hover {
+    opacity: 1;
+}
+  
+/* About Section */
+  
+#about-wrapper {
+    border-top: 1px solid #eee;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+  
+#intro-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+#intro-pic {
+    flex-basis: 20%;
+}
+  
+#intro-copy {
+    flex-basis: 80%;
+    padding: 0 80px;
+}
+  
+#intro-pic img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 200px;
+}
+  
+  /* Tools */
+  
+#tools-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+  
+.tool {
+    color: #999;
+    font-size: 50px;
+    flex-basis: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+  
+#js,
+#php,
+#java {
+    font-size: 4.5em;
+}
+  
+/* Career */
+  
+#career-wrapper {
+    margin: 100px 0;
+}
+  
+.career-item-wrapper {
+    background-color: #eee;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px 40px;
+    box-shadow: 0 3px 15px #777;
+    border-left: 10px solid #777;
+    transition: 400ms box-shadow;
+}
+  
+.career-left {
+    flex-basis: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+  
+.career-right {
+    line-height: 2;
+    flex-basis: 75%;
+}
+  
+.career-item {
+    margin: 10px 0;
+}
+  
+.position {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.company,
+.dates {
+    font-style: italic;
+}
+  
+.career-item-wrapper:hover {
+    box-shadow: unset;
+}
+  
+/* SVG Shapes */
+
+#svg-1 {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    animation-name: square-lateral;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -200;
+}
+
+#square {
+    fill: #55f7d4;
+    height: inherit;
+    width: inherit;
+}
+
+@keyframes square-lateral {
+    from {transform-origin: 0 0;}
+    to {transform: rotate(120deg);}
+}
+  
+#svg-2 {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: -100px;
+    left: 450px;
+    z-index: -200;
+    animation-name: circle-freefall;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+#circle {
+    fill: #55f7d4;
+}
+  
+@keyframes circle-freefall {
+    from {top: -100px;}
+    to {top: 750px;}
+}
+  
