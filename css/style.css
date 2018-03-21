@@ -568,7 +568,7 @@ footer {
 }
 
 .pixodime {
-  background-image: url("../assets/pixodime-hero.jpg");
+  background-image: url('../assets/pixodime/pixodime-hero.jpg');
   filter: grayscale(100%);
   /* z-index: -10; */
 }
@@ -724,7 +724,7 @@ footer {
 }
 
 .pixodime-back {
-  background-image: url(../assets/pixodime-back.png);
+  background-image: url('../assets/pixodime/pixodime-back.png');
 }
 
 #finished-product-overlay {
