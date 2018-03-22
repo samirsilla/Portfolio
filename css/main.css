@@ -325,7 +325,16 @@ footer {
     .primary-link {
         width: 100%;
         text-align: center;
+    }
+    #copyright, #privacy-links {
+        font-size: 0.8em;
     }     
 }
 
-/* 639px is next */
+@media (max-width: 37.5em) {
+    .container {
+        margin: 50px 60px;
+    }
+}
+
+/* 600px is next */

@@ -210,6 +210,11 @@
 #circle {
     fill: #55f7d4;
 }
+
+#small-circle {
+    fill: #55f7d4;
+    display: none;
+}
   
 @keyframes circle-freefall {
     from {top: -100px;}
@@ -267,6 +272,7 @@
     .career-right {
         flex-basis: 70%;
         margin-top: 15px;
+        text-align: center;
     }
 }
 
@@ -290,6 +296,39 @@
     }
     .career-left {
         font-size: 0.8em;
+    }
+    .tool {
+        margin: 25px 5px;
+    }
+}
+
+@media (max-width: 31.25em) {
+    .tool {
+        margin: 5px 15px;
+    }
+    .career-item-wrapper {
+        background-color: #fff;
+        border: none;
+        box-shadow: unset;
+        padding: 40px 5px;
+        border-top: 1px solid #eee;
+        margin-top: 20px;
+    }
+    #hero-wrapper {
+        padding: 50px 0;
+    }
+    #hero-wrapper h1 {
+        text-align: center;
+    }
+    #svg-1 {
+        height: 50px;
+        width: 50px;
+    }
+    #circle {
+        display: none;
+    }
+    #small-circle {
+        display: block;
     }
 }
 
