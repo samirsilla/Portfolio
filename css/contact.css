@@ -6,10 +6,11 @@
 /* Contact Page */
 
 #contact-form-wrapper {
+    /* height: 100%; */
     width: 65%;
     text-align: center;
     margin: 0 auto 50px auto;
-    padding: 50px; 
+    padding: 50px 300px; 
 }
 
 .input-box {
@@ -63,4 +64,52 @@
     font-size: 1.3em;
     width: 100%;
     margin-top: 50px;
+}
+
+@media (max-width: 131.25em) {
+    #contact-form-wrapper {
+        padding: 50px 200px;
+    }
+}
+
+@media (max-width: 112.5em) {
+    #contact-form-wrapper {
+        padding: 50px 150px;
+    }
+}
+
+@media (max-width: 102.5em) {
+    #contact-form-wrapper {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 93.75em) {
+    #contact-form-wrapper {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 87.5em) {
+    #contact-form-wrapper {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 48em) {
+    #contact-form-wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 31.25em) {
+    #contact-form-wrapper {
+        width: 75%;
+    }
+}
+
+@media (max-width: 25em) {
+    #contact-form-wrapper {
+        width: 70%;
+    }
 }

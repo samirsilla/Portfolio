@@ -104,7 +104,7 @@
     margin: auto;
     margin-top: 50px;
     padding: 40px 40px;
-    box-shadow: 0 3px 15px #777;
+    /* box-shadow: 0 3px 15px #777; */
     border-left: 10px solid #777;
     transition: 400ms box-shadow;
 }
@@ -309,7 +309,6 @@
     .career-item-wrapper {
         background-color: #fff;
         border: none;
-        box-shadow: unset;
         padding: 40px 5px;
         border-top: 1px solid #eee;
         margin-top: 20px;
