@@ -6,34 +6,36 @@
 /* Hero Section */
 
 #hero-wrapper {
-    height: 60vh;
+    height: 60%;
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
     padding: 100px 0;
 }
   
 #hero-wrapper h1 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
   
 /* Projects Section  */
   
 #projects-wrapper {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
 }
   
 .project {
-    height: 350px;
-    flex-basis: 100%;
+    height: 450px;
+    flex-basis: 50%;
     position: relative;
     overflow: hidden;
 }
   
 .project img {
     width: 100%;
+    height: 100%;
 }
   
 .img-overlay {
@@ -67,7 +69,7 @@
 #intro-wrapper {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
   
@@ -76,41 +78,14 @@
 }
   
 #intro-copy {
-    flex-basis: 80%;
+    flex-basis: 50%;
     padding: 0 80px;
 }
   
 #intro-pic img {
     height: auto;
     max-width: 100%;
-    border-radius: 200px;
-}
-  
-  /* Tools */
-  
-#tools-wrapper {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
-  
-.tool {
-    color: #999;
-    font-size: 50px;
-    flex-basis: 14%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0;
-}
-  
-#js,
-#php,
-#java {
-    font-size: 4.5em;
+    border-radius: 300px;
 }
   
 /* Career */
@@ -121,10 +96,12 @@
   
 .career-item-wrapper {
     background-color: #eee;
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
     margin-top: 50px;
     padding: 40px 40px;
     box-shadow: 0 3px 15px #777;
@@ -133,14 +110,14 @@
 }
   
 .career-left {
-    flex-basis: 20%;
+    flex-basis: 30%;
     display: flex;
     flex-flow: column nowrap;
 }
   
 .career-right {
     line-height: 2;
-    flex-basis: 75%;
+    flex-basis: 68%;
 }
   
 .career-item {
@@ -160,6 +137,34 @@
 .career-item-wrapper:hover {
     box-shadow: unset;
 }
+
+/* Tools */
+  
+#tools-wrapper {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+  
+.tool {
+    color: #999;
+    font-size: 50px;
+    flex-basis: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+  
+#js,
+#php,
+#java {
+    font-size: 4.5em;
+}
   
 /* SVG Shapes */
 
@@ -168,7 +173,7 @@
     width: 80px;
     position: absolute;
     top: 80px;
-    right: 200px;
+    right: 20%;
     animation-name: square-lateral;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -193,13 +198,13 @@
     width: 150px;
     position: absolute;
     top: -100px;
-    left: 450px;
-    z-index: -200;
+    left: 20%;
     animation-name: circle-freefall;
     animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
+    z-index: -200;
 }
 
 #circle {
@@ -211,3 +216,80 @@
     to {top: 750px;}
 }
   
+@media (max-width: 90em) {    
+    #intro-copy {
+        flex-basis: 70%;
+        padding: 0 80px;
+    }
+    .career-item-wrapper {
+        width: 90%;
+    }
+    #tools-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 68.75em) {
+    .project {
+        height: 350px;
+        flex-basis: 100%;
+    }
+    #intro-copy {
+        flex-basis: 80%;
+        padding: 0 50px;
+    }
+    .career-item-wrapper {
+        width: 100%;
+    }
+    .career-right {
+        font-size: 0.8em;
+    }
+    #tools-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 56.875em) {
+    .project {
+        height: 300px;
+    }
+    .career-item-wrapper {
+        flex-flow: column nowrap;
+        padding: 60px 40px;
+        
+    }
+    .career-left {
+        text-align: center;
+        flex-basis: 20%;
+        margin-bottom: 15px;
+    }
+    .career-right {
+        flex-basis: 70%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 48em) {
+    .project {
+        height: 250px;
+    }
+    #intro-wrapper {
+        flex-flow: column nowrap;
+    }
+    #intro-pic {
+        margin-bottom: 30px;
+    }
+    #intro-pic img {
+        max-height: 100%;
+        max-width: 200px;
+    }
+    #intro-copy {
+        padding: 0;
+        text-align: center;
+    }
+    .career-left {
+        font-size: 0.8em;
+    }
+}
+
