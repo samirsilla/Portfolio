@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.0em;
+    font-size: 3em;
     font-weight: 900;
     line-height: var(--heading-line-height);
 }
@@ -298,18 +298,36 @@ footer {
     p {
         font-size: 1em;
         line-height: 1.8em;
-    }     
+    }    
+    nav a {
+        font-size: 5em;
+    } 
+    .section-heading {
+        font-size: 1.7em;
+    }
 }
 
 @media (max-width: 56.875em) {
     h1 {
         font-size: 2em;
     }
+    h2 {
+        font-size: 1.8em;
+    }
+    nav a {
+        font-size: 3.5em;
+    }
+    .section-heading {
+        font-size: 1.4em;
+    }
 }
 
 @media (max-width: 48em) {
     h1 {
         font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.3em;
     }
     h3 {
         font-size: 0.8em;
@@ -328,13 +346,20 @@ footer {
     }
     #copyright, #privacy-links {
         font-size: 0.8em;
-    }     
+    }  
+    #close {
+        font-size: 2em;
+    }   
+    .section-heading {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 37.5em) {
     .container {
         margin: 50px 60px;
     }
+    nav a {
+        font-size: 2em;
+    }
 }
-
-/* 600px is next */

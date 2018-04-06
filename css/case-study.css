@@ -8,6 +8,7 @@
 .pixodime {
     background-image: url('../assets/pixodime/pixodime-hero.jpg');
     filter: grayscale(100%);
+    overflow: hidden;
 }
 
 .pixodime-product-hero {
@@ -35,6 +36,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
   
 .hero-overlay h1 {
@@ -73,6 +75,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    overflow: hidden;
 }
   
 #client-intro-wrapper * p {
@@ -85,12 +88,12 @@
 }
   
 #client-intro-copy {
-    padding: 50px 125px;
+    padding: 50px 250px;
 }
   
 #client-intro-copy p {
     margin: 20px 0;
-    text-align: center;
+    text-align: justify;
 }
   
 /* Challenge Approach Section */
@@ -100,6 +103,7 @@
     display: flex;
     flex-flow: row nowrap;
     padding: 70px 40px;
+    overflow: hidden;
 }
   
 #challenge-approach-wrapper * {
@@ -112,6 +116,7 @@
     font-size: 1em;
     color: #333;
     line-height: 2;
+    text-align: justify;
 }
   
 .two-col-copy {
@@ -127,14 +132,14 @@
     align-items: center;
     padding-top: 50px;
     padding-bottom: 25px;
+    overflow: hidden;
 }
   
 #solution-wrapper > p {
     font-size: 1em;
     line-height: 2;
-    width: 60%;
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 250px;
+    text-align: justify;
 }
 
 /* Finished Product Hero */
@@ -192,10 +197,12 @@
   
 .slides {
       display: none;
+      overflow: hidden;
 }
 
 .slides > img {
     width: 100%;
+    overflow: hidden;
 }
   
 .prev, .next {
@@ -249,10 +256,8 @@
 #slideshow-copy > p {
     font-size: 1em;
     line-height: 2;
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    padding: 50px 0;
+    text-align: justify;
+    padding: 50px 150px;
 }
 
 /* Contact CTA Section */
@@ -262,7 +267,7 @@
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    padding: 50px 200px ;
+    padding: 50px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
@@ -322,4 +327,81 @@
   
 .alpha-2 {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries */
+
+@media (max-width: 78.125em) {
+    #client-intro-copy {
+        padding: 50px 150px;
+    }
+    #solution-wrapper > p {
+        padding: 50px 150px;
+    }
+  
+}
+
+@media (max-width: 61.125em) {
+    .client-logo {
+        height: 40px;
+    }
+    #client-intro-copy {
+        padding: 50px 0;
+    }
+    #solution-wrapper > p {
+        padding: 50px 0;
+    }
+    #slideshow-copy > p {
+        padding: 50px 0;
+    }
+    #challenge-approach-wrapper {
+        padding: 70px 10px;
+    }
+    .two-col-copy {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 48em) {
+    .hero-overlay li {
+        font-size: 1em;
+    }
+    #challenge-approach-wrapper {
+        flex-flow: column nowrap;
+        padding: 90px 0 50px 0;
+    }
+    #challenge-approach-wrapper * p {
+        margin-bottom: 40px;
+    }
+    #finished-product-images {
+        flex-flow: column nowrap;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+    }
+    #case-studies-wrapper {
+        flex-flow: column nowrap;
+        /* flex-basis: 100%; */
+    }
+    .case-study-link {
+        width: 100%;
+        flex-basis: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 26.5625em) {
+    #client-intro-copy {
+        padding: 50px 0px;
+    }
+    #challenge-approach-wrapper {
+        padding: 70px 10px;
+    }
+}
+
+@media (max-width: 23.4375em) {
+    .hero-overlay li {
+        display: inline-block;
+        margin: 25px 5px;
+    }
 }
