@@ -10,6 +10,11 @@
     overflow: hidden;
 }
 
+.sharp {
+    background-image: url('../assets/sharp/sharp-hero.jpg');
+    overflow: hidden;
+}
+
 .client-name {
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -299,8 +304,12 @@
     position: relative;
 }
   
-.alpha-1 {
+.alpha-pixodime {
     background-color: rgba(74, 162, 248, 0.9);
+}
+
+.alpha-sharp {
+    background-color: rgba(204, 159, 86, 0.9);
 }
   
 .alpha-2 {

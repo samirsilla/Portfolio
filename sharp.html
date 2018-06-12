@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Samir Muratovic">
+    <meta name="copyright" content="Samir Muratovic">
+    <meta name="topic" content="Web Development">
+    <meta name="description" content="Samir Muratovic is a professional web developer specializing in responsive front-end design.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Bootstrap,front-end,developer,web developer, web design, web designer, design, website development, responsive, mobile design,professional">
+    <title>Samir Muratovic - Sharp Barber Spa Case Study</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/case-study.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+    <aside id="sidebar">
+        <a id="menu-btn">MENU</a>
+    </aside>
+    <div id="menu">
+        <div id="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <!-- #close -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a id="portfolio-link" href="index.html#projects-wrapper">Portfolio</a>
+            <a id="about-link" href="index.html#about-wrapper">About</a>
+            <a href="contact.php">Contact</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </div>
+    <!-- #menu -->
+
+
+    <section>
+        <div id="hero-wrapper" class="sharp">
+            <div class="hero-overlay alpha-sharp">
+                <h1 class="client-name">Sharp Barber Spa</h1>
+                <ul class="services-for-case">
+                    <li>App Design</li>
+                    <div class="sep-line"></div>
+                    <li>Appointment Booking</li>
+                    <div class="sep-line"></div>
+                    <li>Rebranding</li>
+                </ul>
+                <a href="#client-intro-wrapper">
+                    <i class="fas fa-chevron-down scroll-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- #case-study-hero -->
+    </section>
+
+    <div class="container">
+        <main>
+
+            <section>
+                <div id="client-intro-wrapper">
+                    <div id="client-logo">
+                        <img class="client-logo" src="assets/sharp/sharp-logo.png" alt="sharp cuts logo">
+                    </div>
+                    <div id="client-intro-copy">
+                        <p>Founded in 1932, Sharp Cuts Barber Spa is a retro barbershop catering to men of all ages.
+                            Based in Boston, the shop has been a staple in the downtown area for any grooming needs. Sharp prides itself on providing a relaxing, enjoyable, and memorable experience every time you walk in their door.</p>
+                        <p>With a team of super-skilled barbers, the shop never disappoints. Their cut and shave combo is one of the most popular services for those seeking a full grooming experience. Sharp recently launched a gift option and with such a high demand for this service, it wanted to streamline appointment booking, allowing the Sharp team to focus on doing what they do best -- making you look fresh.
+                        </p>
+                    </div>
+                    <!-- #client-intro-copy -->
+                </div>
+                <!-- #client-intro-wrapper -->
+            </section>
+
+            <section>
+                <div id="challenge-approach-wrapper">
+                    <div class="two-col-copy">
+                        <h2 class="section-heading">The Challenge</h2>
+                        <p>When Sharp Barber Spa approached me, some of their biggest online priorities were implementing appointment booking functionality and user experience. The shop wanted to streamline appointment booking to free up their time for more important tasks. In addition, Sharp wanted a re-design of their current website in order to match the appointment booking system.</p>
+                    </div>
+                    <!-- #challenge -->
+
+                    <div class="two-col-copy">
+                        <h2 class="section-heading">The Approach</h2>
+                        <p>With these goals in mind, I immediately turned my focus on developing an appointment booking system. For this, I decided to utilize JavaScript in conjunction with HTML5 and CSS3. For the website design, I contemplated a responsive design that is sleek and modern, to fit the theme of the barbershop.</p>
+                    </div>
+                    <!-- #approach -->
+                </div>
+                <!-- #challenge-approach-wrapper -->
+            </section>
+
+            <section>
+                <div id="solution-wrapper">
+                    <h2 class="section-heading">
+                        The Solution
+                    </h2>
+                    <h3 class="subheading">Newly Engineered Barbershop App</h3>
+                    <p>It started with an amazing barbershop team, who dedicate their lives to perfecting their craft.
+                        I delivered a web application that is modern, responsive, and catches the eye of visitors. To meet their most critical goal, I implemented appointment booking functionality, allowing users to book appointments without help from staff. This saves the shop significant labor hours daily. View the final project below.</p>
+                    <a class="primary-link" href="https://github.com/samirsilla/sharp-cuts" target="_blank">view project</a>
+                </div>
+                <!-- #solution-wrapper -->
+            </section>
+
+    </div>
+    <!-- End container -->
+
+
+
+    <div class="container">
+
+        <section>
+            <!-- <div id="slideshow-header">
+        <h2 class="section-heading">Blending Well-Crafted Design with Sharp Engineering</h2>
+      </div> -->
+            <div class="slideshow-wrapper">
+                <div class="slides fade">
+                    <img src="assets/sharp/landing.jpg" alt="sharp barber spa website">
+                </div>
+                <div class="slides fade">
+                    <img src="assets/sharp/services.jpg" alt="sharp barber spa website">
+                </div>
+                <div class="slides fade">
+                    <img src="assets/sharp/booking.jpg" alt="sharp barber spa website">
+                </div>
+                <div class="slides fade">
+                    <img src="assets/sharp/contact.jpg" alt="sharp barber spa website">
+                </div>
+            </div>
+            <!-- #slideshow-wrapper -->
+
+            <div id="img-circles-wrapper">
+                <a class="prev" onclick="plusSlides(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <a class="next" onclick="plusSlides(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            <!-- #img-circles-wrapper -->
+
+        </section>
+
+        <section>
+            <div id="contact-cta-wrapper">
+                <h2>Got a project idea or a challenge for me?</h2>
+                <a class="primary-link contact-cta" href="contact.php">Get in touch</a>
+            </div>
+            <!-- #contact-cta-wrapper -->
+        </section>
+
+        <section>
+            <div id="case-studies-wrapper">
+                <article id="case-previous" class="case-study-link">
+                    <img src="assets/soundsnapz/soundsnapz-featured.jpg" alt="soundsnapz case study">
+                    <a href="#">
+                        <div class="case-link-overlay light alpha-2">
+                            <h2>Soundsnapz</h2>
+                            <h4>previous case study</h4>
+                        </div>
+                        <!-- .case-link-overlay -->
+                    </a>
+                </article>
+
+                <article id="case-next" class="case-study-link">
+                    <img src="assets/artisan/artisan-featured.jpg" alt="artisan talent case study">
+                    <a href="#">
+                        <div class="case-link-overlay light alpha-2">
+                            <h2>Artisan Talent</h2>
+                            <h4>next case study</h4>
+                        </div>
+                        <!-- .case-link-overlay -->
+                    </a>
+                </article>
+            </div>
+            <!-- #case-studies-wrapper -->
+        </section>
+        </main>
+
+        <footer>
+            <div id="footer-wrapper">
+                <div id="social-links">
+                    <div class="social-link">
+                        <a href="http://github.com/samirsilla" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- .social-link -->
+                    <div class="social-link">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <!-- .social-link -->
+                    <div class="social-link">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <!-- .social-link -->
+                    <div class="social-link">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <!-- .social-link -->
+                </div>
+                <!-- #social-links -->
+                <div id="copyright">
+                    Copyright &copy; 2018 Samir Muratovic. All Rights Reserved.
+                </div>
+                <div id="privacy-links">
+                    <div class="privacy-link">
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="green-line">
+                    </div>
+                    <div class="privacy-link">
+                        <a href="#">Terms of Use</a>
+                    </div>
+                </div>
+                <!-- #privacy-links -->
+                <div id="author-brand">
+                    Website by
+                    <a href="#" id="author-font">smr.</a>
+                </div>
+                <!-- #author-brand -->
+            </div>
+            <!-- .vertical-flex-wrapper -->
+        </footer>
+    </div>
+    <!-- .container -->
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+
+</html>
