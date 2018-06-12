@@ -27,7 +27,11 @@
 }
   
 .project {
-    max-height: 400px;
+    /* max-height: 400px; */
+    max-height: 350px;
+    width: 100%;
+    /* height: auto; */
+    /* max-height: 350px; */
     flex-basis: 50%;
     position: relative;
     overflow: hidden;
@@ -35,6 +39,7 @@
   
 .project img {
     width: 100%;
+    overflow: hidden;
     height: auto;
 }
   
@@ -236,7 +241,7 @@
 
 @media (max-width: 68.75em) {
     .project {
-        height: 350px;
+        max-height: 350px;
         flex-basis: 100%;
     }
     #intro-copy {
@@ -257,7 +262,7 @@
 
 @media (max-width: 56.875em) {
     .project {
-        height: 300px;
+        max-height: 300px;
     }
     .career-item-wrapper {
         flex-flow: column nowrap;
@@ -278,7 +283,7 @@
 
 @media (max-width: 48em) {
     .project {
-        height: 250px;
+        max-height: 250px;
     }
     #intro-wrapper {
         flex-flow: column nowrap;
