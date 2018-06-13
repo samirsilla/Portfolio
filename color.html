@@ -10,7 +10,7 @@
     <meta name="topic" content="Web Development">
     <meta name="description" content="Samir Muratovic is a professional web developer specializing in responsive front-end design.">
     <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Bootstrap,front-end,developer,web developer, web design, web designer, design, website development, responsive, mobile design,professional">
-    <title>Samir Muratovic - Sharp Barber Spa Case Study</title>
+    <title>Samir Muratovic - Color Case Study</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/case-study.css">
@@ -38,15 +38,13 @@
 
 
     <section>
-        <div id="hero-wrapper" class="sharp">
-            <div class="hero-overlay alpha-sharp">
-                <h1 class="client-name">Sharp Barber Spa</h1>
+        <div id="hero-wrapper" class="color">
+            <div class="hero-overlay alpha-color">
+                <h1 class="client-name">Color</h1>
                 <ul class="services-for-case">
                     <li>App Design</li>
                     <div class="sep-line"></div>
-                    <li>Appointment Booking</li>
-                    <div class="sep-line"></div>
-                    <li>Rebranding</li>
+                    <li>App Development</li>
                 </ul>
                 <a href="#client-intro-wrapper">
                     <i class="fas fa-chevron-down scroll-icon"></i>
@@ -62,12 +60,11 @@
             <section>
                 <div id="client-intro-wrapper">
                     <div id="client-logo">
-                        <img class="client-logo" src="assets/sharp/sharp-logo.png" alt="sharp cuts logo">
+                        <img class="client-logo" src="assets/color/color-logo.png" alt="color logo">
                     </div>
                     <div id="client-intro-copy">
-                        <p>Founded in 1932, Sharp Cuts Barber Spa is a retro barbershop catering to men of all ages.
-                            Based in Boston, the shop has been a staple in the downtown area for any grooming needs. Sharp prides itself on providing a relaxing, enjoyable, and memorable experience every time you walk in their door.</p>
-                        <p>With a team of super-skilled barbers, the shop never disappoints. Their cut and shave combo is one of the most popular services for those seeking a full grooming experience. Sharp recently launched a gift option and with such a high demand for this service, it wanted to streamline appointment booking, allowing the Sharp team to focus on doing what they do best -- making you look fresh.
+                        <p>Color is a web application that was thought up in my mind with some inspiration from the internet. As I work on web development projects, I often find the need to convert hex color values to rgb color values, or vice versa. It puts a halt in my workflow and requires me to do some work on google.</p>
+                        <p>One day, I thought of the idea to create a simple web application to handle this little task for me. The following is a case study of how the app came to life.
                         </p>
                     </div>
                     <!-- #client-intro-copy -->
@@ -79,13 +76,13 @@
                 <div id="challenge-approach-wrapper">
                     <div class="two-col-copy">
                         <h2 class="section-heading">The Challenge</h2>
-                        <p>When Sharp Barber Spa approached me, some of their biggest online priorities were implementing appointment booking functionality and user experience. The shop wanted to streamline appointment booking to free up their time for more important tasks. In addition, Sharp wanted a re-design of their current website in order to match the appointment booking system.</p>
+                        <p>The main goals of this project were to make the app really easy to use and to make it really efficient. If it takes more than 5 seconds to get what I need from it, I could just use Google and not bother. Biggest question is how to maximize usability and efficiency without sacrificing visual appeal?</p>
                     </div>
                     <!-- #challenge -->
 
                     <div class="two-col-copy">
                         <h2 class="section-heading">The Approach</h2>
-                        <p>With these goals in mind, I immediately turned my focus on developing an appointment booking system. For this, I decided to utilize JavaScript in conjunction with HTML5 and CSS3. For the website design, I contemplated a responsive design that is sleek and modern, to fit the theme of the barbershop.</p>
+                        <p>Knowing that the app must be extremely effiecent, I started there. I built a conversion algorithm for both the hex and rgb values that automatically displayed the desired outcome to the user. Once that step was completed, I focused on usability and making the user experience delightful. For this, I elected a minimalistic approach to design and made sure the app was consistent across different devices.</p>
                     </div>
                     <!-- #approach -->
                 </div>
@@ -97,10 +94,10 @@
                     <h2 class="section-heading">
                         The Solution
                     </h2>
-                    <h3 class="subheading">Newly Engineered Barbershop App</h3>
-                    <p>It started with an amazing barbershop team, who dedicate their lives to perfecting their craft.
-                        I delivered a web application that is modern, responsive, and catches the eye of visitors. To meet their most critical goal, I implemented appointment booking functionality, allowing users to book appointments without help from staff. This saves the shop significant labor hours daily. View the final project below.</p>
-                    <a class="primary-link" href="https://github.com/samirsilla/sharp-cuts" target="_blank">view project</a>
+                    <h3 class="subheading">Innovative Color Conversion App</h3>
+                    <p>It started with a problem and a little imagination. The result is a responsive, web application that is extremely efficient and very user friendly. View the finished project
+                        below.</p>
+                    <a class="primary-link" href="https://github.com/samirsilla/color" target="_blank">view project</a>
                 </div>
                 <!-- #solution-wrapper -->
             </section>
@@ -118,16 +115,13 @@
       </div> -->
             <div class="slideshow-wrapper">
                 <div class="slides fade">
-                    <img src="assets/sharp/landing.jpg" alt="sharp barber spa website">
+                    <img src="assets/color/initial-state.png" alt="color website">
                 </div>
                 <div class="slides fade">
-                    <img src="assets/sharp/services.jpg" alt="sharp barber spa website">
+                    <img src="assets/color/input-hex.png" alt="color website">
                 </div>
                 <div class="slides fade">
-                    <img src="assets/sharp/booking.jpg" alt="sharp barber spa website">
-                </div>
-                <div class="slides fade">
-                    <img src="assets/sharp/contact.jpg" alt="sharp barber spa website">
+                    <img src="assets/color/input-rgb.png" alt="color website">
                 </div>
             </div>
             <!-- #slideshow-wrapper -->
@@ -139,7 +133,6 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
                 <a class="next" onclick="plusSlides(1)">
                     <i class="fas fa-chevron-right"></i>
                 </a>
@@ -159,10 +152,10 @@
         <section>
             <div id="case-studies-wrapper">
                 <article id="case-previous" class="case-study-link">
-                    <img src="assets/color/color-featured.jpg" alt="color case study">
-                    <a href="color.html">
+                    <img src="assets/pixodime/pixodime-featured.jpg" alt="pixodime case study">
+                    <a href="pixodime.html">
                         <div class="case-link-overlay light alpha-2">
-                            <h2>Color</h2>
+                            <h2>Pixodime</h2>
                             <h4>previous case study</h4>
                         </div>
                         <!-- .case-link-overlay -->
@@ -170,10 +163,10 @@
                 </article>
 
                 <article id="case-next" class="case-study-link">
-                    <img src="assets/artisan/artisan-featured.jpg" alt="artisan talent case study">
-                    <a href="artisan.html">
+                    <img src="assets/sharp/sharp-featured.jpg" alt="sharp talent case study">
+                    <a href="sharp.html">
                         <div class="case-link-overlay light alpha-2">
-                            <h2>Artisan Talent</h2>
+                            <h2>Sharp Barber Spa</h2>
                             <h4>next case study</h4>
                         </div>
                         <!-- .case-link-overlay -->

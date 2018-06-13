@@ -74,20 +74,8 @@
           </div>
           <!-- .social-link -->
           <div class="social-link">
-            <a href="#" target="_blank">
+            <a href="http://linkedin.com/in/samirmuratovic" target="_blank">
               <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-          <!-- .social-link -->
-          <div class="social-link">
-            <a href="#" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <!-- .social-link -->
-          <div class="social-link">
-            <a href="#" target="_blank">
-              <i class="fab fa-facebook-f"></i>
             </a>
           </div>
           <!-- .social-link -->
