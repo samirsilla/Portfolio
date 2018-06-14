@@ -1,3 +1,7 @@
+(function () {
+  'use strict';
+})();
+
 const sidebar = document.getElementById('sidebar');
 const menuBtn = document.getElementById('menu-btn');
 const navMenu = document.getElementById('menu');
