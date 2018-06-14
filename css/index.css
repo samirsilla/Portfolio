@@ -3,23 +3,25 @@
     contains styling for elements relevant to only the home page
 */
 
-/* Hero Section */
-
 #hero-wrapper {
-    height: 60%;
+    height: 550px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
     padding: 100px 0;
+    position: relative;
 }
   
 #hero-wrapper h1 {
-    margin-bottom: 100px;
+    width: 75%;
 }
-  
-/* Projects Section  */
+
+.move-down {
+    position: absolute;
+    bottom: 100px;
+}
   
 #projects-wrapper {
     display: flex;
@@ -27,19 +29,15 @@
 }
   
 .project {
-    /* max-height: 400px; */
-    max-height: 350px;
-    width: 100%;
-    /* height: auto; */
-    /* max-height: 350px; */
+    height: auto;
     flex-basis: 50%;
     position: relative;
     overflow: hidden;
 }
   
 .project img {
-    width: 100%;
-    overflow: hidden;
+    max-width: 100%;
+    display: block;
     height: auto;
 }
   
@@ -62,8 +60,6 @@
 .img-overlay:hover {
     opacity: 1;
 }
-  
-/* About Section */
   
 #about-wrapper {
     border-top: 1px solid #eee;
@@ -93,8 +89,6 @@
     border-radius: 300px;
 }
   
-/* Career */
-  
 #career-wrapper {
     margin: 100px 0;
 }
@@ -109,7 +103,6 @@
     margin: auto;
     margin-top: 50px;
     padding: 40px 40px;
-    /* box-shadow: 0 3px 15px #777; */
     border-left: 10px solid #777;
     transition: 400ms box-shadow;
 }
@@ -117,7 +110,7 @@
 .career-left {
     flex-basis: 30%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
 }
   
 .career-right {
@@ -129,7 +122,7 @@
     margin: 10px 0;
 }
   
-.position {
+.job-position {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -143,8 +136,6 @@
     box-shadow: unset;
 }
 
-/* Tools */
-  
 #tools-wrapper {
     width: 80%;
     display: flex;
@@ -156,7 +147,7 @@
 }
   
 .tool {
-    color: #999;
+    color: #ccc;
     font-size: 50px;
     flex-basis: 14%;
     display: flex;
@@ -164,14 +155,12 @@
     justify-content: center;
     margin: 25px 0;
 }
-  
+
 #js,
 #php,
 #java {
     font-size: 4.5em;
 }
-  
-/* SVG Shapes */
 
 #svg-1 {
     height: 80px;
@@ -187,17 +176,6 @@
     z-index: -200;
 }
 
-#square {
-    fill: #55f7d4;
-    height: inherit;
-    width: inherit;
-}
-
-@keyframes square-lateral {
-    from {transform-origin: 0 0;}
-    to {transform: rotate(120deg);}
-}
-  
 #svg-2 {
     height: 150px;
     width: 150px;
@@ -216,9 +194,15 @@
     fill: #55f7d4;
 }
 
-#small-circle {
+#square {
     fill: #55f7d4;
-    display: none;
+    height: inherit;
+    width: inherit;
+}
+
+@keyframes square-lateral {
+    from {transform-origin: 0 0;}
+    to {transform: rotate(120deg);}
 }
   
 @keyframes circle-freefall {

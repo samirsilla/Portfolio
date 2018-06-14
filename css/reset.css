@@ -1,3 +1,8 @@
+/* 
+    reset.css
+    contains reset rules to remove browser default styling on elements
+*/
+
 * {
     margin: 0;
     padding: 0;

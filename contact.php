@@ -25,10 +25,7 @@
     <a id="menu-btn">MENU</a>
   </aside>
   <div id="menu">
-    <div id="close">
-      <i class="fas fa-times"></i>
-    </div>
-    <!-- #close -->
+    <i id="close-icon" class="fas fa-times"></i>
     <nav>
       <a href="index.html">Home</a>
       <a id="portfolio-link" href="index.html#projects-wrapper">Portfolio</a>
@@ -88,7 +85,7 @@
           <div class="privacy-link">
             <a href="index.html">Privacy Policy</a>
           </div>
-          <div class="green-line">
+          <div class="gray-line">
 
           </div>
           <div class="privacy-link">

@@ -60,42 +60,28 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: column;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     position: relative;
 }
   
 .hero-overlay h1 {
-    margin: 25px 0;
+    /* margin: 25px 0; */
 }
   
 .hero-overlay li {
-    font-size: 1.5em;
-    font-style: italic;
+    font-size: 1.3em;
+    /* font-style: italic; */
+    font-weight: 300;
     display: inline-block;
-    margin: 25px 15px;
+    margin: 0 15px;
 }
-  
-.scroll-icon {
-    color: #eee;
-    font-size: 3em;
-    position: absolute;
-    bottom: 100px;
-    animation-name: scroll-icon-animate;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-    opacity: 0.5;
+
+.case-study {
+    font-size: 2.5em;
 }
-  
-@keyframes scroll-icon-animate {
-    from {opacity: 0.11;}
-    to {opacity: 1; bottom: 50px;}
-}
-  
-/* Client Intro Section */
   
 #client-intro-wrapper {
     display: flex;
@@ -272,17 +258,15 @@
 /* Next and Previous Thumbnails */
   
 #case-studies-wrapper {
-    height: 500px; 
-    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     padding: 50px 0;
 }
   
 .case-study-link {
-    width: 50%;
     flex-basis: 50%;
     overflow: hidden;
+    height: auto;
 }
   
 .case-link-overlay {
@@ -305,8 +289,9 @@
 }
   
 .case-study-link > img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
   
 #case-previous, #case-next {

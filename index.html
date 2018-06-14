@@ -20,20 +20,16 @@
 
 <body>
   <svg id="svg-1">
-    <rect id="square"/>
+    <rect id="square" height="80" width="80"/>
   </svg>
   <svg id="svg-2">
     <circle id="circle" cx="75" cy="75" r="75"/>
-    <circle id="small-circle" cx="40" cy="40" r="40"/>
   </svg>
   <aside id="sidebar">
     <a id="menu-btn">MENU</a>
   </aside>
   <div id="menu">
-    <div id="close">
-      <i class="fas fa-times"></i>
-    </div>
-    <!-- #close -->
+    <i id="close-icon" class="fas fa-times"></i>
     <nav>
       <a href="index.html">Home</a>
       <a id="portfolio-link" href="#projects-wrapper">Portfolio</a>
@@ -44,10 +40,7 @@
   </div> <!-- #menu -->
 
   <header>
-    <div id="brand">
-      <h2>smr.</h2>
-    </div>
-    <!-- #brand -->
+    <h2>smr.</h2>
   </header>
   <div class="container">
     <main>
@@ -57,7 +50,7 @@
           <span class="typer" id="typer" data-words="beautiful,responsive,mobile-friendly,minimal,purposeful,results-driven" data-delay="100"
             data-deleteDelay="4000"></span>
           <span class="cursor" data-owner="typer"></span>design.</h1>
-        <a class="primary-link center" href="contact.php">say hello</a>
+        <a class="primary-link move-down" href="contact.php">say hello</a>
         </div> <!-- #hero-wrapper -->
       </section>
 
@@ -141,7 +134,7 @@
           <div id="career-wrapper">
             <div class="career-item-wrapper">
               <div class="career-left">
-                <div class="career-item position">
+                <div class="career-item job-position">
                   Front-end Engineer
                 </div>
                 <!-- .career-item position -->
@@ -163,7 +156,7 @@
             <!-- .career-item-wrapper -->
             <div class="career-item-wrapper">
               <div class="career-left">
-                <div class="career-item position">
+                <div class="career-item job-position">
                   Web Developer
                 </div>
                 <!-- .career-item position -->
@@ -185,7 +178,7 @@
             <!-- .career-item-wrapper -->
             <div class="career-item-wrapper">
               <div class="career-left">
-                <div class="career-item position">
+                <div class="career-item job-position">
                   IT Project Manager
                 </div>
                 <!-- .career-item-position -->
@@ -209,46 +202,46 @@
           <!-- #career-wrapper -->
             <div id="tools-wrapper">
               <div class="tool">
-                <i class="fab fa-apple"></i>
+                <i class="fab fa-apple tool" title="Mac OS"></i>
               </div>
               <div class="tool">
-                <i class="fab fa-windows"></i>
+                <i class="fab fa-windows" title="Windows OS"></i>
               </div>
               <div class="tool">
-                <i class="icon-git"></i>
+                <i class="icon-git" title="Git Version Control"></i>
               </div>
               <div class="tool">
-                <i class="icon-html5-alt"></i>
+                <i class="icon-html5-alt" title="HTML5"></i>
               </div>
               <div class="tool">
-                <i class="icon-css3-alt"></i>
+                <i class="icon-css3-alt" title="CSS3"></i>
               </div>
               <div class="tool">
-                <i class="icon-sass"></i>
+                <i class="icon-sass" title="SASS"></i>
               </div>
               <div class="tool">
-                <i class="icon-bootstrap"></i>
+                <i class="icon-bootstrap" title="Bootstrap"></i>
               </div>
               <div id="js" class="tool">
-                <i class="icon-javascript-alt"></i>
+                <i class="icon-javascript-alt" title="JavaScript"></i>
               </div>
               <div id="php" class="tool">
-                <i class="icon-php-alt"></i>
+                <i class="icon-php-alt" title="PHP"></i>
               </div>
               <div class="tool">
-                <i class="icon-angular"></i>
+                <i class="icon-angular" title="AngularJS"></i>
               </div>
               <div id="java" class="tool">
-                <i class="icon-java-bold"></i>
+                <i class="icon-java-bold" title="Java"></i>
               </div>
               <div class="tool">
-                <i class="icon-database"></i>
+                <i class="icon-database" title="Database Development"></i>
               </div>
               <div class="tool">
-                <i class="icon-mysql-alt"></i>
+                <i class="icon-mysql-alt" title="MySQL"></i>
               </div>
               <div class="tool">
-                <i class="icon-mobile-device"></i>
+                <i class="icon-mobile-device" title="Responsive Design"></i>
               </div>
             </div>
             <!-- #tools-wrapper -->
@@ -280,7 +273,7 @@
           <div class="privacy-link">
             <a href="#">Privacy Policy</a>
           </div>
-          <div class="green-line">
+          <div class="gray-line">
           </div>
           <div class="privacy-link">
             <a href="#">Terms of Use</a>
@@ -289,7 +282,7 @@
         <!-- #privacy-links -->
         <div id="author-brand">
           Website by
-          <a href="#" id="author-font">smr.</a>
+          <span id="author-font">smr.</span>
         </div>
         <!-- #author-brand -->
       </div>

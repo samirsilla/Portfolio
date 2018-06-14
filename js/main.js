@@ -3,7 +3,7 @@ var menuBtn = document.getElementById('menu-btn');
 var navMenu = document.getElementById('menu');
 var aboutLink = document.getElementById('about-link');
 var portfolioLink = document.getElementById('portfolio-link');
-var closeIcon = document.getElementById('close');
+var closeIcon = document.getElementById('close-icon');
 
 menuBtn.addEventListener('click', menuBtnClicked);
 menuBtn.addEventListener('mouseover', changeSidebarBorder);
